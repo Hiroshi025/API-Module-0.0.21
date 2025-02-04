@@ -1,0 +1,141 @@
+name: "Pixel Proyects"
+apps:
+  - "discord"
+  - "whatzapp"
+
+####################################################
+##------------------------------------------------##
+##                General Config                  ##
+##------------------------------------------------##
+####################################################
+
+bot:
+  console: true
+  prefix: "!"
+  owners:
+    - ""
+  logs:
+    - "AutoModerationActionExecution"
+    - "MessageUpdate"
+    - "AutoModerationRuleCreate"
+    - "GuildMemberRemove"
+    - "GuildMemberAdd"
+    - "ChannelDelete"
+    - "ChannelCreate"
+    - "GuildEmojiCreate"
+    - "GuildRoleCreate"
+    - "GuildRoleDelete"
+    - "InviteCreate"
+    - "CacheSweep"
+    - "VoiceStateUpdate"
+  addon-extensions:
+    - ".js"
+    - ".ts"
+  bot-extensions:
+    - ".js"
+    - ".ts"
+
+  ## WEBHOOKS ##
+  webhooks:
+    error: ""
+    console: ""
+    paypal: ""
+  
+  ## TICKETS ##
+  tickets:
+    permissions:
+      user:
+        - "ViewChannel"
+        - "SendMessages"
+        - "ReadMessageHistory"
+        - "AttachFiles"
+        - "EmbedLinks"
+        - "UseApplicationCommands"
+      role:
+        - "ViewChannel"
+        - "AddReactions"
+        - "ReadMessageHistory"
+        - "AttachFiles"
+        - "EmbedLinks"
+        - "UseApplicationCommands"
+        - "SendMessages"
+    time: 300000 # 5 minutes
+    message:
+      embed:
+        title: "" 
+        description: ""
+    options:
+      max-ticket-amout: 5
+      times:
+        time-1: 23
+        time-2: 6
+      button:
+        url: "https://docs.hiroshi-dev.me/"
+        label: "Documentation"    
+
+####################################################
+##------------------------------------------------##
+##                Express Config                  ##
+##------------------------------------------------##
+####################################################
+
+express:
+  host: "localhost"
+  port: 3000
+  callback: "http://localhost:3000/auth/login"
+  client_id: ""
+  client_secret: ""
+  prefix: "/api/v1" 
+  static-dirs:
+    - "css" 
+    - "js"
+    - "vendor"
+    - "assets" 
+    - "fonts"
+    - "images"
+    - "scss"
+  roles:
+    - "developer"
+    - "admin"
+    - "user" 
+    - "customer"
+
+  ## WEBSITE ##
+  website:
+    guild: "" # Server ID
+    channel: "" # Channel General
+    role: "" # Moderator Role
+  keys:
+    utils: ""
+    clients: ""
+    development: ""
+  swagger:
+    name: "API Stats - Asistent"
+    version: "0.1.1"
+    url: "/api/v1/asistent-stats"
+    docs: "/api/v1/docs"
+    auth:
+      name: "admin"
+      password: "client-asistent001"
+
+####################################################
+##------------------------------------------------##
+##                 Paths Config                   ##
+##------------------------------------------------##
+####################################################
+
+paths:
+  discord: "src/modules/discord"
+  database: "src/database"
+  swagger: "config/swagger.yml"
+  logs: "config/logs"
+  whatsapp: "config/whatsapp"
+
+####################################################
+##------------------------------------------------##
+##                  APIS Config                   ##
+##------------------------------------------------##
+####################################################
+
+apis: 
+  pokedex: "https://pokeapi.glitch.me/v1/pokemon/"

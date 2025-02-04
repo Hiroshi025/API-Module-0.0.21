@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <%- include('./partials/meta'); %>
+    <title>
+      <%= botname %> - Administrator
+    </title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="/vendor/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="/vendor/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="/vendor/jvectormap/jquery-jvectormap.css" />
+    <link rel="stylesheet" href="/vendor/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="/vendor/owl-carousel-2/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/vendor/owl-carousel-2/owl.theme.default.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="icon" type="image/png" href="/assets/images/logo.jpg" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <%- include('./partials/sidebar'); %>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo-mini" href="/web/welcome"><img src="/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <ul class="navbar-nav w-100">
+            <li class="nav-item w-100">
+              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                <input type="text" class="form-control" placeholder="Search products" />
+              </form>
+            </li>
+          </ul>
+          <%- include('./partials/headers'); %>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+              data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              Information Apps
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Administrator</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Bot Info -->
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">RAM Usage</h4>
+                  <canvas id="lineChart" style="height: 250px"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">CPU Usage</h4>
+                  <canvas id="areaChart" style="height: 250px"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Bot Utils</h4>
+                  <canvas id="barChart" style="height:230px"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">User & Bots</h4>
+                  <canvas id="doughnutChart" style="height:250px"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- From Process -->
+          <div class="page-header">
+            <h3 class="page-title">
+              Forms Utils
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Administrator</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Forms</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Form User Update -->
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Register Order</h4>
+                <p class="card-description"> Order Information </p>
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputName1">Name</label>
+                    <input type="text" class="form-control" id="name-product" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">User ID</label>
+                    <input type="text" class="form-control" id="userid-product" placeholder="User ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Image</label>
+                    <input type="url" class="form-control" id="image-product" placeholder="Image URL">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">Product Cost</label>
+                    <input type="number" class="form-control" id="cost-product" placeholder="Cost Product">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectGender">Project</label>
+                    <select class="form-control" id="type-proyect">
+                      <option>Discord Bot</option>
+                      <option>Solidwork Design</option>
+                      <option>Web Page</option>
+                      <option>Malware</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea1">Information</label>
+                    <textarea class="form-control" id="info-proyect" rows="4"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectGender">Payment Mode</label>
+                    <select class="form-control" id="payment-proyect">
+                      <option>Paypal</option>
+                      <option>Stripe</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectGender">Status</label>
+                    <select class="form-control" id="status-proyect">
+                      <option>Approved</option>
+                      <option>Pending</option>
+                      <option>Rejected</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2"
+                    id="submit-register-proyect">Submit</button>
+                  <button class="btn btn-lg btn-rounded btn-dark" id="cancel-register-proyect">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Form Bot Crypto Update -->
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Add Crypto Bot</h4>
+                <p class="card-description"> Bot Information </p>
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputName1">Token</label>
+                    <input type="text" class="form-control" id="token-crypto" placeholder="Token Bot">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectGender">Enabled</label>
+                    <select class="form-control" id="enabled-crypto">
+                      <option>false</option>
+                      <option>true</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Coin ID</label>
+                    <input type="text" class="form-control" id="coinId-crypto" placeholder="Coin ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">Preferred</label>
+                    <input type="text" class="form-control" id="preferred-crypto" placeholder="Preferred">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">Symbol</label>
+                    <input type="text" class="form-control" id="symbol-crypto" placeholder="Symbol">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">Separator</label>
+                    <input type="number" class="form-control" id="separator-crypto" placeholder="Separator">
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2"
+                    id="submit-register-crypto">Submit</button>
+                  <button class="btn btn-lg btn-rounded btn-dark" id="cancel-register-crypto">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Add Product Free Form -->
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Create Product FREE</h4>
+                <p class="card-description"> Bot Information </p>
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputName1">Name:</label>
+                    <input type="text" class="form-control" id="free-name" placeholder="Name Free Product">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Description:</label>
+                    <input type="text" class="form-control" id="free-description" placeholder="Description">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">URL Image</label>
+                    <input type="url" class="form-control" id="free-image" placeholder="URL Image HTTP">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail3">URL Download</label>
+                    <input type="url" class="form-control" id="free-url" placeholder="Download URL">
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2" id="submit-free">Submit</button>
+                  <button class="btn btn-lg btn-rounded btn-dark" id="cancel-free">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="page-header">
+            <h3 class="page-title">
+              Config Options
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Administrator</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Config</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Form User Update -->
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Update Role User</h4>
+                <form class="form-sample">
+                  <p class="card-description"> Personal info </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row form-control-lg">
+                        <label class="col-sm-3 col-form-label">Discord ID</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="discordId" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row form-control-lg">
+                        <label class="col-sm-3 col-form-label">Role</label>
+                        <div class="col-sm-9">
+                          <select class="form-control" id="role">
+                            <option>user</option>
+                            <option>customer</option>
+                            <option>admin</option>
+                            <option>developer</option>
+                            <option>owner</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2"
+                    id="submit-update-role">Submit</button>
+                  <button class="btn btn-lg btn-rounded btn-dark" id="cancel-update-role">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Add message whatsapp bot -->
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Message Whatsapp</h4>
+                <form class="form-sample">
+                  <p class="card-description"> Message info </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row form-control-lg">
+                        <label class="col-sm-3 col-form-label">Message</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="whatsapp-message" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row form-control-lg">
+                        <label class="col-sm-3 col-form-label">Response</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="whatsapp-response" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2"
+                    id="submit-send-message">Submit</button>
+                  <button class="btn btn-lg btn-rounded btn-dark" id="cancel-send-message">Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Table Dates -->
+          <div class="page-header">
+            <h3 class="page-title">
+              Table Information
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Administrator</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tables</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- Table User -->
+          <!-- Tabke Orders -->
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Total Order Status</h4>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="form-check form-check-muted m-0">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" />
+                            </label>
+                          </div>
+                        </th>
+                        <th>Order Name</th>
+                        <th>Order No</th>
+                        <th>Product Cost</th>
+                        <th>Project</th>
+                        <th>Payment Mode</th>
+                        <th>Start Date</th>
+                        <th>Payment Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% orders.forEach((order)=> { %>
+                        <tr>
+                          <td>
+                            <div class="form-check form-check-muted m-0">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" />
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <img src="<%= order.image %>" alt="image" />
+                            <span class="pl-2">
+                              <%= order.name %>
+                            </span>
+                          </td>
+                          <td>
+                            <%= order.number %>
+                          </td>
+                          <td>
+                            <%= order.price %>
+                          </td>
+                          <td>
+                            <%= order.quantity %>
+                          </td>
+                          <td>
+                            <%= order.metode %>
+                          </td>
+                          <td>
+                            <%= order.date %>
+                          </td>
+                          <td>
+                            <% if (order.status==='Approved' ) { %>
+                              <div class="badge badge-outline-success">Approved</div>
+                              <% } else if (order.status==='Pending' ) { %>
+                                <div class="badge badge-outline-warning">Pending</div>
+                                <% } else if (order.status==='Rejected' ) { %>
+                                  <div class="badge badge-outline-danger">Rejected</div>
+                                  <% } else { %>
+                                    <div class="badge badge-outline-info">Unknown</div>
+                                    <% } %>
+                          </td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Table Orders -->
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <%- include('./partials/credits'); %>
+          <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="/vendor/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="/vendor/chart.js/Chart.min.js"></script>
+  <script src="/vendor/progressbar.js/progressbar.min.js"></script>
+  <script src="/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="/vendor/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="/vendor/owl-carousel-2/owl.carousel.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/misc.js"></script>
+  <script src="/js/settings.js"></script>
+  <script src="/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script src="/js/dashboard.js"></script>
+  <!-- Freee Product -->
+  <script>
+    $(document).ready(function () {
+      const name = document.getElementById('free-name');
+      const description = document.getElementById('free-description');
+      const image = document.getElementById('free-image');
+      const url = document.getElementById('free-url');
+
+      const userID = JSON.parse('<%- JSON.stringify(userId) %>');
+
+      const key = JSON.parse('<%- JSON.stringify(keys) %>');
+      // Verifica que todos los elementos existen
+      if (!name || !description || !image || !url) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+      }
+
+      // Cuando se presione el botón
+      document.getElementById('submit-free').addEventListener('click', function (e) {
+        e.preventDefault();
+        fetch('/utils/dashboard/products/free-add', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            "utils-key": key
+          },
+          body: JSON.stringify({
+            name: name.value,
+            description: description.value,
+            image: image.value,
+            url: url.value,
+            userId: userID
+          })
+        }).then(res => {
+          console.log(res);
+          res.json();
+        })
+          .then(data => {
+            // Si el usuario se registró correctamente, muestra una alerta
+            alert('Product registered successfully');
+            console.log(data);
+
+            // Limpia los campos
+            name.value = '';
+            description.value = '';
+            image.value = '';
+            url.value = '';
+          })
+          .catch(err => {
+            alert('Error registering product');
+            console.log(err);
+          });
+      });
+
+      // Si se selecciona el botón de cancelar
+      document.getElementById('cancel-free').addEventListener('click', function (e) {
+        e.preventDefault();
+        name.value = '';
+        description.value = '';
+        image.value = '';
+        url.value = '';
+      });
+    });
+  </script>
+  <!-- Crypto Bot -->
+  <script>
+    //la api es /utils/dashboard/bots/crptocurrency-add metodo post
+    $(document).ready(function () {
+      const token = document.getElementById('token-crypto');
+      const enabled = document.getElementById('enabled-crypto');
+      const coinId = document.getElementById('coinId-crypto');
+      const preferred = document.getElementById('preferred-crypto');
+      const symbol = document.getElementById('symbol-crypto');
+      const separator = document.getElementById('separator-crypto');
+
+      const key = JSON.parse('<%- JSON.stringify(keys) %>');
+      // Verifica que todos los elementos existen
+      if (!token || !enabled || !coinId || !preferred || !symbol || !separator) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+      }
+
+      // Cuando se presione el botón
+      document.getElementById('submit-register-crypto').addEventListener('click', function (e) {
+        e.preventDefault();
+        fetch('/utils/dashboard/bots/crptocurrency-add', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            "utils-key": key
+          },
+          body: JSON.stringify({
+            token: token.value,
+            enabled: enabled.value,
+            coinId: coinId.value,
+            preferred: preferred.value,
+            symbol: symbol.value,
+            separator: separator.value
+          })
+        }).then(res => res.json())
+          .then(data => {
+            // Si el usuario se registró correctamente, muestra una alerta
+            alert('Bot registered successfully');
+            console.log(data);
+
+            // Limpia los campos
+            token.value = '';
+            enabled.value = '';
+            coinId.value = '';
+            preferred.value = '';
+            symbol.value = '';
+            separator.value = '';
+          })
+          .catch(err => {
+            alert('Error registering bot');
+            console.log(err);
+          });
+      });
+
+      // Si se selecciona el botón de cancelar
+      document.getElementById('cancel-register-crypto').addEventListener('click', function (e) {
+        e.preventDefault();
+        token.value = '';
+        enabled.value = '';
+        coinId.value = '';
+        preferred.value = '';
+        symbol.value = '';
+        separator.value = '';
+      });
+    });
+  </script>
+  <!-- Form Whatsapp -->
+  <script>
+    $(document).ready(function () {
+      const message = document.getElementById('whatsapp-message');
+      const response = document.getElementById('whatsapp-response');
+
+      const userID = JSON.parse('<%- JSON.stringify(userId) %>');
+      const userName = JSON.parse('<%- JSON.stringify(username) %>');
+      const key = JSON.parse('<%- JSON.stringify(keys) %>');
+
+      // Verifica que todos los elementos existen
+      if (!message || !response) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+      }
+
+      // Cuando se presione el botón
+      document.getElementById('submit-send-message').addEventListener('click', function (e) {
+        e.preventDefault();
+        fetch('/utils/dashboard/admins/save-whatsapp', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            "utils-key": key
+          },
+          body: JSON.stringify({
+            userId: userID,
+            username: userName,
+            message: message.value,
+            response: response.value
+          })
+        }).then(res => res.json())
+          .then(data => {
+            // Si el usuario se registró correctamente, muestra una alerta
+            alert('Message save successfully');
+            console.log(data);
+
+            // Limpia los campos
+            message.value = '';
+            response.value = '';
+          })
+          .catch(err => {
+            alert('Error save message');
+            console.log(err);
+          })
+      });
+
+      // Si se selecciona el botón de cancelar
+      document.getElementById('cancel-send-message').addEventListener('click', function (e) {
+        e.preventDefault();
+        message.value = '';
+        response.value = '';
+      });
+    });
+  </script>
+  <!-- End custom js for this page -->
+  <script>
+    $(function () {
+      "use strict";
+      const machine = JSON.parse('<%- JSON.stringify(machine) %>');
+
+      // Inicializar datos iniciales
+      const ramData = {
+        labels: [],
+        datasets: [
+          {
+            label: "RAM (MB)",
+            data: [],
+            borderColor: "rgba(54, 162, 235, 1)",
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            fill: true,
+          },
+        ],
+      };
+      const cpuData = {
+        labels: [],
+        datasets: [
+          {
+            label: "CPU (ms)",
+            data: [],
+            borderColor: "rgba(255, 99, 132, 1)",
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            fill: true,
+          },
+        ],
+      };
+
+      // Opciones de las gráficas
+      const options = {
+        scales: {
+          yAxes: [
+            {
+              ticks: { beginAtZero: true },
+              gridLines: { color: "rgba(204, 204, 204,0.1)" },
+            },
+          ],
+          xAxes: [
+            {
+              gridLines: { color: "rgba(204, 204, 204,0.1)" },
+              ticks: {
+                autoSkip: true, // Salta etiquetas si están muy juntas
+                maxTicksLimit: 5, // Máximo de etiquetas visibles
+                callback: function (value, index, values) {
+                  return index % 2 === 0 ? value : ""; // Muestra solo cada etiqueta alterna
+                },
+              },
+            },
+          ],
+        },
+        legend: { display: true },
+        elements: { point: { radius: 0 } },
+      };
+
+      // Crear gráficas
+      const ramChart = new Chart($("#lineChart").get(0).getContext("2d"), {
+        type: "line",
+        data: ramData,
+        options,
+      });
+      const cpuChart = new Chart($("#areaChart").get(0).getContext("2d"), {
+        type: "line",
+        data: cpuData,
+        options,
+      });
+
+      // Función para actualizar datos
+      function updateCharts() {
+        const now = new Date().toLocaleTimeString();
+
+        // Actualizar datos de RAM
+        if (ramData.labels.length > 10) ramData.labels.shift();
+        if (ramData.datasets[0].data.length > 10) ramData.datasets[0].data.shift();
+        ramData.labels.push(now);
+        ramData.datasets[0].data.push(machine.ram);
+
+        // Actualizar datos de CPU
+        if (cpuData.labels.length > 10) cpuData.labels.shift();
+        if (cpuData.datasets[0].data.length > 10) cpuData.datasets[0].data.shift();
+        cpuData.labels.push(now);
+        cpuData.datasets[0].data.push(machine.cpu);
+
+        ramChart.update();
+        cpuChart.update();
+      }
+
+      // Actualizar cada 10s
+      setInterval(updateCharts, 10000);
+
+      // Llamada inicial para cargar datos
+      updateCharts();
+    });
+  </script>
+  <!-- Form User Update -->
+  <script>
+    $(document).ready(function () {
+      const discordId = document.getElementById('discordId');
+      const role = document.getElementById('role');
+
+      const key = JSON.parse('<%- JSON.stringify(keys) %>');
+      // Verifica que todos los elementos existen
+      if (!discordId || !role) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+      }
+
+      // Cuando se presione el botón
+      document.getElementById('submit-update-role').addEventListener('click', function (e) {
+        e.preventDefault();
+        fetch('/utils/dashboard/admins/update-user-role', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            "utils-key": key
+          },
+          body: JSON.stringify({
+            userId: discordId.value,
+            role: role.value
+          })
+        }).then(res => res.json())
+          .then(data => {
+            // Si el usuario se registró correctamente, muestra una alerta
+            alert('User updated successfully');
+            console.log(data);
+
+            // Limpia los campos
+            discordId.value = '';
+            role.value = '';
+          })
+          .catch(err => {
+            alert('Error updating user');
+            console.log(err);
+          });
+      });
+
+      // Si se selecciona el botón de cancelar
+      document.getElementById('cancel-update-role').addEventListener('click', function (e) {
+        e.preventDefault();
+        discordId.value = '';
+        role.value = '';
+      });
+    });
+  </script>
+  <!-- Chart.js -->
+  <script>
+    $(function () {
+      'use strict';
+      const precommands = JSON.parse("<%- JSON.stringify(_client.precommands.size) %>");
+      const commands = JSON.parse("<%- JSON.stringify(_client.commands.size) %>");
+      const buttons = JSON.parse("<%- JSON.stringify(_client.buttons.size) %>");
+      const modals = JSON.parse("<%- JSON.stringify(_client.modals.size) %>");
+      const addons = JSON.parse("<%- JSON.stringify(_client.addons.size) %>");
+      const menus = JSON.parse("<%- JSON.stringify(_client.menus.size) %>");
+
+      const users = JSON.parse("<%- JSON.stringify(bot.usersAmount) %>");
+      const bots = JSON.parse("<%- JSON.stringify(server.bots) %>");
+
+
+      var data = {
+        labels: ["precommands", "commands", "buttons", "modals", "addons", "menus"],
+        datasets: [{
+          label: '# of Votes',
+          data: [
+            precommands,
+            commands,
+            buttons,
+            modals,
+            addons,
+            menus
+          ],
+          backgroundColor: [
+            "rgba(220,220,220,0.2)",
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+          ],
+          borderColor: [
+            "rgba(220,220,220,1)",
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+          ],
+          borderWidth: 1,
+          fill: false
+        }]
+      };
+
+      var options = {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            gridLines: {
+              color: "rgba(204, 204, 204,0.1)"
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              color: "rgba(204, 204, 204,0.1)"
+            }
+          }]
+        },
+        legend: {
+          display: false
+        },
+        elements: {
+          point: {
+            radius: 0
+          }
+        }
+      };
+
+      var doughnutPieData = {
+        datasets: [{
+          data: [
+            users,
+            bots
+          ],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.5)',
+            'rgba(54, 162, 235, 0.5)',
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+          ]
+        }],
+        labels: [
+          'Users',
+          'Bots',
+        ]
+      };
+
+      var doughnutPieOptions = {
+        responsive: true,
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      };
+
+      if ($("#barChart").length) {
+        var barChartCanvas = $("#barChart").get(0).getContext("2d");
+        var barChart = new Chart(barChartCanvas, {
+          type: 'bar',
+          data: data,
+          options: options
+        });
+      }
+
+      if ($("#doughnutChart").length) {
+        var doughnutChartCanvas = $("#doughnutChart").get(0).getContext("2d");
+        var doughnutChart = new Chart(doughnutChartCanvas, {
+          type: 'doughnut',
+          data: doughnutPieData,
+          options: doughnutPieOptions
+        });
+      }
+    });
+  </script>
+  <!-- Register Proyect -->
+  <script>
+    $(document).ready(function () {
+      const name = document.getElementById('name-product');
+      const image = document.getElementById('image-product');
+      const cost = document.getElementById('cost-product');
+      const type = document.getElementById('type-proyect');
+      const info = document.getElementById('info-proyect');
+      const payment = document.getElementById('payment-proyect');
+      const status = document.getElementById('status-proyect');
+      const user = document.getElementById('userid-product');
+
+
+      const key = JSON.parse('<%- JSON.stringify(keys) %>');
+      // Verifica que todos los elementos existen
+      if (!name || !image || !cost || !type || !info || !payment || !status || !user) {
+        console.error('Uno o más elementos no se encontraron en el DOM');
+        return;
+      }
+
+      // Cuando se presione el botón
+      document.getElementById('submit-register-proyect').addEventListener('click', function (e) {
+        e.preventDefault();
+        fetch('/utils/dashboard/admins/register-proyect', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            "utils-key": key
+          },
+          body: JSON.stringify({
+            name: name.value,
+            userId: user.value,
+            image: image.value,
+            price: cost.value,
+            type: type.value,
+            info: info.value ? info.value : 'No information',
+            payment: payment.value,
+            status: status.value
+          })
+        }).then(res => res.json())
+          .then(data => {
+            // Si el usuario se registró correctamente, muestra una alerta
+            alert('Proyect registered successfully');
+            console.log(data);
+
+            // Limpia los campos
+            name.value = '';
+            image.value = '';
+            cost.value = '';
+            type.value = '';
+            info.value = '';
+            payment.value = '';
+            status.value = '';
+          })
+          .catch(err => {
+            alert('Error registering proyect');
+            console.log(err);
+          });
+      });
+
+      // Si se selecciona el botón de cancelar
+      document.getElementById('cancel-register-proyect').addEventListener('click', function (e) {
+        e.preventDefault();
+        name.value = '';
+        image.value = '';
+        cost.value = '';
+        type.value = '';
+        info.value = '';
+        payment.value = '';
+        status.value = '';
+      });
+    });
+  </script>
+</body>
+
+</html>

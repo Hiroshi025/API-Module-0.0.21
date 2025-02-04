@@ -1,0 +1,40 @@
+{
+  "correct": "✅",
+  "error": "❌",
+  "loading": "🔄",
+  "success": "✅",
+  "warning": "⚠️",
+  "send": "📤",
+  "time": "⏰",
+  "info": "📝",
+  "tickets": {
+    "open": "🔓",
+    "closed": "🔒",
+    "pending": "🕒",
+    "inprogress": "🕐",
+    "claim": "🔒",
+    "unclaim": "🔓",
+    "deleted": "🗑️",
+    "add": "➕",
+    "rename": "📝",
+    "remove": "➖",
+    "options": {
+      "channel": "📁",
+      "category": "📂",
+      "transcript": "📜",
+      "role": "🔑",
+      "message": "📩",
+      "options": "🔧"
+    }
+  },
+  "tasks": {
+    "welcome": "👋",
+    "create": "📝",
+    "delete": "🗑️",
+    "info": "📝"
+  },
+  "back": "🔙",
+  "home": "🏠",
+  "forward": "🔜",
+  "channelname": "🪜"
+}

@@ -1,0 +1,25 @@
+@userId = ""
+@title = ""
+@content = ""
+@lenguage = ""
+### 
+
+GET http://localhost:3000/api/v1
+Content-Type: application/json
+
+### 
+
+GET http://localhost:3000/api/v1/sources/{ID}
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/v1/sources
+Content-Type: application/json
+
+{
+  "userId": {{userId}}
+  "title": {{title}}
+  "content": {{content}}
+  "lenguage": {{lenguage}}
+}

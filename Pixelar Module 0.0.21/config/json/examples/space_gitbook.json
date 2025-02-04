@@ -1,0 +1,1597 @@
+{
+  "object": "revision",
+  "id": "df7qMiLVeR01HIjL5Zds",
+  "parents": [
+      "yDc8vfQBXLlC8u5QGU4q",
+      "8xl2InMr7uVpHaMSwaKS"
+  ],
+  "pages": [
+      {
+          "id": "66AM5tWnCIcE8oGH3bVV",
+          "title": "Introduccion",
+          "kind": "sheet",
+          "type": "document",
+          "urls": {
+              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/introduccion"
+          },
+          "description": "Soporte de proyectos realizados por parte del equipo, desde aplicaciones hasta programas y scripts. Este proyecto fue resultado del tiempo libre de los creadores",
+          "path": "introduccion",
+          "slug": "introduccion",
+          "documentId": "kjqPJ4LL4DPP2YfGZueB",
+          "createdAt": "2024-12-30T15:59:00.880Z",
+          "updatedAt": "2024-12-30T15:59:00.880Z",
+          "git": {
+              "oid": "afdceafa119fde6f24a3730e6f8c2039a1194251",
+              "path": "docs/README.md"
+          },
+          "pages": [],
+          "layout": {
+              "cover": true,
+              "coverSize": "full",
+              "title": true,
+              "description": true,
+              "tableOfContents": true,
+              "outline": true,
+              "pagination": true
+          },
+          "cover": {
+              "ref": {
+                  "kind": "file",
+                  "file": "9Le5JOEboiU0hYPxUP1S"
+              },
+              "yPos": 0
+          }
+      },
+      {
+          "id": "smXh2kg0Oz05V7SArNeR",
+          "title": "Librerias ",
+          "icon": "bagel",
+          "kind": "group",
+          "type": "group",
+          "path": "librerias",
+          "slug": "librerias",
+          "pages": [
+              {
+                  "id": "3IZZVlgsoslmZsPDMSQ8",
+                  "title": "Pixel Handlers",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/pixel-handlers"
+                  },
+                  "description": "Librerías desarrolladas por nuestro equipo de trabajo",
+                  "path": "librerias/pixel-handlers",
+                  "slug": "pixel-handlers",
+                  "documentId": "G5iqbiF5gIhwpu31NvbW",
+                  "createdAt": "2025-01-02T22:12:21.134Z",
+                  "updatedAt": "2025-01-02T22:12:21.134Z",
+                  "git": {
+                      "oid": "1f7afaa920e93f30c1a5e11e0b2ed6e3f5711cdc",
+                      "path": "docs/librerias/pixel-handlers.md"
+                  },
+                  "pages": [],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              },
+              {
+                  "id": "UjQ7EjVQQePppZ7gtJjb",
+                  "title": "Asistente",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente"
+                  },
+                  "description": "Proyecto de administración, control y Core para discord, Whatsapp y otras plataformas",
+                  "path": "librerias/asistente",
+                  "slug": "asistente",
+                  "documentId": "s4QEny3n6KJrtCtgMlV8",
+                  "createdAt": "2025-01-07T05:38:14.348Z",
+                  "updatedAt": "2025-01-07T05:38:14.348Z",
+                  "git": {
+                      "oid": "4cf44b07142a8c911e429bdba5a380bf635c4af7",
+                      "path": "docs/librerias/asistente/README.md"
+                  },
+                  "pages": [
+                      {
+                          "id": "0dyVGwvCXH57QpKlGBF5",
+                          "title": "Introducción",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/introduccion"
+                          },
+                          "description": "Rendimiento y especificaciones para el producto",
+                          "path": "librerias/asistente/introduccion",
+                          "slug": "introduccion",
+                          "documentId": "GSany9CPxipHW5PgWWLe",
+                          "createdAt": "2025-01-10T02:24:52.276Z",
+                          "updatedAt": "2025-01-10T02:24:52.276Z",
+                          "git": {
+                              "oid": "ff1b35f409ca3e82f1f1cdbd1f8fed0283e14fdd",
+                              "path": "docs/librerias/asistente/introduccion/README.md"
+                          },
+                          "pages": [
+                              {
+                                  "id": "xI6EVgsJoMjN5DaK9M5C",
+                                  "title": "Instalación",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/introduccion/instalacion"
+                                  },
+                                  "description": "Proceso de instalación del proyecto y descarga de las dependencias",
+                                  "path": "librerias/asistente/introduccion/instalacion",
+                                  "slug": "instalacion",
+                                  "documentId": "Ra5iksC9bhlIM2QshPQH",
+                                  "createdAt": "2025-01-10T03:52:53.850Z",
+                                  "updatedAt": "2025-01-10T03:52:53.850Z",
+                                  "git": {
+                                      "oid": "e0342f59149596aa955900672f482ded4a5b809e",
+                                      "path": "docs/librerias/asistente/introduccion/instalacion.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              }
+                          ],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "iCopi6YDsh0QTuJdGSTx",
+                          "title": "Api Rest",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/api-rest"
+                          },
+                          "description": "El proyecto cuenta con una API privada y publica con el fin de aumentar su rango de acciones y utilidades",
+                          "path": "librerias/asistente/api-rest",
+                          "slug": "api-rest",
+                          "documentId": "wOOWtr2ka4RJFsfXhOOX",
+                          "createdAt": "2025-01-09T06:22:59.838Z",
+                          "updatedAt": "2025-01-09T06:22:59.838Z",
+                          "git": {
+                              "oid": "c2baa4163324acec2cb622f874ecd57649ec6d41",
+                              "path": "docs/librerias/asistente/api-rest.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "KRIaBS8il4V57Nxs6fef",
+                          "title": "Complementos",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/complementos"
+                          },
+                          "description": "Como crear tus propios addons dentro del proyecto mismo",
+                          "path": "librerias/asistente/complementos",
+                          "slug": "complementos",
+                          "documentId": "sPHTXEQU9FgJB1ZMIf0y",
+                          "createdAt": "2025-01-09T06:29:55.831Z",
+                          "updatedAt": "2025-01-09T06:29:55.831Z",
+                          "git": {
+                              "oid": "0c8ae2ee8a480f2a1482b95367cd67bef76d4970",
+                              "path": "docs/librerias/asistente/complementos.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "sN8TRTZVAZmC5gTTTXXa",
+                          "title": "Módulos",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/modulos"
+                          },
+                          "description": "módulos dentro del proyecto asistente",
+                          "path": "librerias/asistente/modulos",
+                          "slug": "modulos",
+                          "documentId": "6slUHkZXM6FUyVyG3Hlm",
+                          "createdAt": "2025-01-09T06:35:44.381Z",
+                          "updatedAt": "2025-01-09T06:35:44.381Z",
+                          "git": {
+                              "oid": "8d0ce6f246c6ec7d3f2847ad60e2949599233a2d",
+                              "path": "docs/librerias/asistente/modulos/README.md"
+                          },
+                          "pages": [
+                              {
+                                  "id": "XXuHoE3n2ws2hBqkBrk1",
+                                  "title": "Economía",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/modulos/economia"
+                                  },
+                                  "description": "Economía dentro del proyecto desde balance hasta el cambio de datos",
+                                  "path": "librerias/asistente/modulos/economia",
+                                  "slug": "economia",
+                                  "documentId": "F8lVECC15lWfhEcQtpMB",
+                                  "createdAt": "2025-01-09T11:56:00.184Z",
+                                  "updatedAt": "2025-01-09T11:56:00.184Z",
+                                  "git": {
+                                      "oid": "a8c7997cfcc735409fc6d90e234d6911f2d20154",
+                                      "path": "docs/librerias/asistente/modulos/economia.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              },
+                              {
+                                  "id": "3iEfMjjcyHr606zAx9bJ",
+                                  "title": "Animelist",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/modulos/animelist"
+                                  },
+                                  "description": "Sistema de anime, notificaciones y cambios de usuarios",
+                                  "path": "librerias/asistente/modulos/animelist",
+                                  "slug": "animelist",
+                                  "documentId": "bzxPqboIkaANGlIhsqUn",
+                                  "createdAt": "2025-01-09T17:29:54.152Z",
+                                  "updatedAt": "2025-01-09T17:29:54.152Z",
+                                  "git": {
+                                      "oid": "a25a214879b86f0e8c754a2ce7c3cffbcfbe0ab8",
+                                      "path": "docs/librerias/asistente/modulos/animelist.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              },
+                              {
+                                  "id": "SmWJNKQxZiDhTNyX0KVu",
+                                  "title": "Nhentai",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/modulos/nhentai"
+                                  },
+                                  "description": "obtención de imágenes de anime, preguntas y mas funciones",
+                                  "path": "librerias/asistente/modulos/nhentai",
+                                  "slug": "nhentai",
+                                  "documentId": "NP7x8a7hrnAmdZVEEore",
+                                  "createdAt": "2025-01-09T17:31:53.197Z",
+                                  "updatedAt": "2025-01-09T17:31:53.197Z",
+                                  "git": {
+                                      "oid": "a418b0698ce0a36761286dea8e76e91054ac90ce",
+                                      "path": "docs/librerias/asistente/modulos/nhentai.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              }
+                          ],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "eGqtzuwR85HF9ocypNzl",
+                          "title": "Bots",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/bots"
+                          },
+                          "description": "bots dentro del proyecto y características principales",
+                          "path": "librerias/asistente/bots",
+                          "slug": "bots",
+                          "documentId": "xD1HPobAokmc6R6boK3H",
+                          "createdAt": "2025-01-09T17:54:02.853Z",
+                          "updatedAt": "2025-01-09T17:54:02.853Z",
+                          "git": {
+                              "oid": "d79c03d65ef566b131db0da603921550b0352ebb",
+                              "path": "docs/librerias/asistente/bots/README.md"
+                          },
+                          "pages": [
+                              {
+                                  "id": "kJ4QYVGRiwhOWNK24zH0",
+                                  "title": "Discord",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/bots/discord"
+                                  },
+                                  "description": "Bot de discord (configurable)",
+                                  "path": "librerias/asistente/bots/discord",
+                                  "slug": "discord",
+                                  "documentId": "LEMcrsVUGrkp8ikxfAsH",
+                                  "createdAt": "2025-01-09T18:39:59.989Z",
+                                  "updatedAt": "2025-01-09T18:39:59.989Z",
+                                  "git": {
+                                      "oid": "aac2a9b62c784758f340a741911652af1de8285f",
+                                      "path": "docs/librerias/asistente/bots/discord.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              },
+                              {
+                                  "id": "ukahZjWb4P0oKt5Wm6YE",
+                                  "title": "Whatsapp",
+                                  "kind": "sheet",
+                                  "type": "document",
+                                  "urls": {
+                                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/librerias/asistente/bots/whatsapp"
+                                  },
+                                  "description": "Bot de whatsapp para soporte y respuesta de mensajes",
+                                  "path": "librerias/asistente/bots/whatsapp",
+                                  "slug": "whatsapp",
+                                  "documentId": "EPODnSTtioKoj3ubbAtl",
+                                  "createdAt": "2025-01-09T18:45:50.019Z",
+                                  "updatedAt": "2025-01-09T18:45:50.019Z",
+                                  "git": {
+                                      "oid": "20280641038a1d70a518ee0eab318fd30653b894",
+                                      "path": "docs/librerias/asistente/bots/whatsapp.md"
+                                  },
+                                  "pages": [],
+                                  "layout": {
+                                      "cover": true,
+                                      "coverSize": "full",
+                                      "title": true,
+                                      "description": true,
+                                      "tableOfContents": true,
+                                      "outline": true,
+                                      "pagination": true
+                                  }
+                              }
+                          ],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      }
+                  ],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              }
+          ]
+      },
+      {
+          "id": "u5Qz9MomImr5GKMuPh2E",
+          "title": "Utilidades",
+          "icon": "arrows-to-circle",
+          "kind": "group",
+          "type": "group",
+          "path": "utilidades",
+          "slug": "utilidades",
+          "pages": [
+              {
+                  "id": "bUdHBrMmkbwFdFOhuCjl",
+                  "title": "RateLimit",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/utilidades/ratelimit"
+                  },
+                  "description": "limite de peticiones en ciertos endpoints dentro de nuestra api de trabajo",
+                  "path": "utilidades/ratelimit",
+                  "slug": "ratelimit",
+                  "documentId": "m6iGKUSm93ngil0u7MFY",
+                  "createdAt": "2025-01-02T21:47:39.964Z",
+                  "updatedAt": "2025-01-02T21:47:39.964Z",
+                  "git": {
+                      "oid": "9ba114a32821a0f08e0e6a2e98bf3809af7b1901",
+                      "path": "docs/utilidades/ratelimit.md"
+                  },
+                  "pages": [],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              },
+              {
+                  "id": "mS8Re1Kki1zWPVPzbgrB",
+                  "title": "Token API",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/utilidades/token-api"
+                  },
+                  "description": "Validacion de datos para proteccion de peticiones http",
+                  "path": "utilidades/token-api",
+                  "slug": "token-api",
+                  "documentId": "4R4P8VvtiGoqZwXwiWF7",
+                  "createdAt": "2025-01-02T21:47:39.964Z",
+                  "updatedAt": "2025-01-02T21:47:39.964Z",
+                  "git": {
+                      "oid": "0fcb217168bb4a7b3d8035d897095051826fea94",
+                      "path": "docs/utilidades/token-api.md"
+                  },
+                  "pages": [],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              },
+              {
+                  "id": "SXRhSoYwHqk36oN59fSM",
+                  "title": "Códigos",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/utilidades/codigos"
+                  },
+                  "description": "Recurso de copa y pega código para compartir con mas usuarios",
+                  "path": "utilidades/codigos",
+                  "slug": "codigos",
+                  "documentId": "L10dYwVFISFWaUz4OqEI",
+                  "createdAt": "2025-01-02T21:39:34.456Z",
+                  "updatedAt": "2025-01-02T21:39:34.456Z",
+                  "git": {
+                      "oid": "a3730d074bbb458ca55270c956aa7cc1aa59068a",
+                      "path": "docs/utilidades/codigos.md"
+                  },
+                  "pages": [],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              }
+          ]
+      },
+      {
+          "id": "1VFhBdjjli0ZzGcadNGS",
+          "title": "Tutoriales",
+          "icon": "wagon-covered",
+          "kind": "group",
+          "type": "group",
+          "path": "tutoriales",
+          "slug": "tutoriales",
+          "pages": [
+              {
+                  "id": "Vr4OoVJ4eMOVWhoK7bUv",
+                  "title": "Bots de Discord",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/tutoriales/bots-de-discord"
+                  },
+                  "description": "Tutoriales del arranque de bots dentro de diferentes servicios",
+                  "path": "tutoriales/bots-de-discord",
+                  "slug": "bots-de-discord",
+                  "documentId": "dlHTBT5ZnmQp86zW2Alf",
+                  "createdAt": "2025-01-07T05:35:14.268Z",
+                  "updatedAt": "2025-01-07T05:35:14.268Z",
+                  "git": {
+                      "oid": "aad056cf09ffd2a2aef3c2001a2f9d061b30cf33",
+                      "path": "docs/tutoriales/bots-de-discord/README.md"
+                  },
+                  "pages": [
+                      {
+                          "id": "byFcEFRyazs91RsKQfyu",
+                          "title": "Docker",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/tutoriales/bots-de-discord/docker"
+                          },
+                          "description": "Este tutorial te guiará paso a paso para desplegar un bot de Discord utilizando Docker. Aprenderás cómo crear un contenedor Docker para tu bot, asegurando que sea fácil de ejecutar en cualquier máquin",
+                          "path": "tutoriales/bots-de-discord/docker",
+                          "slug": "docker",
+                          "documentId": "CsfPyOJbHJCTHkzXLCRG",
+                          "createdAt": "2025-01-05T17:44:07.470Z",
+                          "updatedAt": "2025-01-05T17:44:07.470Z",
+                          "git": {
+                              "oid": "8bf43f42d0ce34d49c38e1194f1a25f46880d10a",
+                              "path": "docs/tutoriales/bots-de-discord/docker.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "GNZmdBnaB5rE5pIJqsDP",
+                          "title": "Replit",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/tutoriales/bots-de-discord/replit"
+                          },
+                          "description": "Este tutorial te guiará paso a paso para desplegar y mantener un bot de Discord en ejecución usando Replit, una plataforma en la nube que permite alojar y ejecutar proyectos de forma gratuita.",
+                          "path": "tutoriales/bots-de-discord/replit",
+                          "slug": "replit",
+                          "documentId": "3sECmWoyLXrzaUrC5Qht",
+                          "createdAt": "2025-01-05T17:44:07.566Z",
+                          "updatedAt": "2025-01-05T17:44:07.566Z",
+                          "git": {
+                              "oid": "8909c142a3518be49108e303de0d78c9c346b72a",
+                              "path": "docs/tutoriales/bots-de-discord/replit.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      },
+                      {
+                          "id": "CYQ8YPK4sENaRU1IPAD8",
+                          "title": "Linux",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/tutoriales/bots-de-discord/linux"
+                          },
+                          "description": "Este tutorial te guiará paso a paso para desplegar y encender un bot de Discord en un servidor o máquina Linux. Aprenderás cómo configurar el entorno necesario, clonar tu bot desde GitHub y mantenerlo",
+                          "path": "tutoriales/bots-de-discord/linux",
+                          "slug": "linux",
+                          "documentId": "dsqpgxW0EQ4N23xLdlZc",
+                          "createdAt": "2025-01-05T17:44:07.566Z",
+                          "updatedAt": "2025-01-05T17:44:07.566Z",
+                          "git": {
+                              "oid": "5102c951b5dafa30ac95f8ed474a3f0c8c2caa26",
+                              "path": "docs/tutoriales/bots-de-discord/linux.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      }
+                  ],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              }
+          ]
+      },
+      {
+          "id": "kohzir7hnOQbMQFGcqcO",
+          "title": "Mas",
+          "icon": "gauge-simple-min",
+          "kind": "group",
+          "type": "group",
+          "path": "mas",
+          "slug": "mas",
+          "pages": [
+              {
+                  "id": "XkkPBc8eNbpxOloDTDZW",
+                  "title": "API Documentation",
+                  "kind": "link",
+                  "type": "link",
+                  "target": {
+                      "kind": "url",
+                      "url": "https://panel.hiroshi-dev.me/api/v1/docs/"
+                  },
+                  "href": "https://panel.hiroshi-dev.me/api/v1/docs/"
+              },
+              {
+                  "id": "n7wB5alZ67g9jgDSjK95",
+                  "title": "Licencias",
+                  "kind": "link",
+                  "type": "link",
+                  "target": {
+                      "kind": "url",
+                      "url": "https://licences.hiroshi-dev.me/"
+                  },
+                  "href": "https://licences.hiroshi-dev.me/"
+              },
+              {
+                  "id": "SwBCDJ5YPwWFmwqgatBb",
+                  "title": "Panel ",
+                  "kind": "link",
+                  "type": "link",
+                  "target": {
+                      "kind": "url",
+                      "url": "https://panel.hiroshi-dev.me/web/welcome"
+                  },
+                  "href": "https://panel.hiroshi-dev.me/web/welcome"
+              }
+          ]
+      },
+      {
+          "id": "RRqMXjUbAp0nek4F1Clq",
+          "title": "Otros",
+          "icon": "circle-chevron-right",
+          "kind": "group",
+          "type": "group",
+          "path": "otros",
+          "slug": "otros",
+          "pages": [
+              {
+                  "id": "GGz5CrZ9m7tKGmsfL26S",
+                  "title": "Términos y Condiciones",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/otros/terminos-y-condiciones"
+                  },
+                  "description": "Términos y Condiciones de Servicio 02 - 01 - 2025",
+                  "path": "otros/terminos-y-condiciones",
+                  "slug": "terminos-y-condiciones",
+                  "documentId": "JPrgPjyHjJqQ46kmUifO",
+                  "createdAt": "2025-01-02T21:55:28.988Z",
+                  "updatedAt": "2025-01-02T21:55:28.988Z",
+                  "git": {
+                      "oid": "408f2a8058dba99ecd8a067487eebe5a7a7ce2ae",
+                      "path": "docs/otros/terminos-y-condiciones.md"
+                  },
+                  "pages": [],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              },
+              {
+                  "id": "VilZsTUVe2hYlKsObIGD",
+                  "title": "Versiones",
+                  "kind": "sheet",
+                  "type": "document",
+                  "urls": {
+                      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/otros/versiones"
+                  },
+                  "description": "Control de versiones",
+                  "path": "otros/versiones",
+                  "slug": "versiones",
+                  "documentId": "O395bq0OtnjxJgC54tb7",
+                  "createdAt": "2025-01-02T21:58:50.602Z",
+                  "updatedAt": "2025-01-02T21:58:50.602Z",
+                  "git": {
+                      "oid": "f5adfd207e789effae65cb96313b6bc3dfe2faed",
+                      "path": "docs/otros/versiones/README.md"
+                  },
+                  "pages": [
+                      {
+                          "id": "ZvBXm64fI0YAluSfse90",
+                          "title": "Asistente",
+                          "kind": "sheet",
+                          "type": "document",
+                          "urls": {
+                              "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/otros/versiones/asistente"
+                          },
+                          "description": "Proyecto con integraciones como discord Bot, Web, Whatsapp Bot, api privada y publica",
+                          "path": "otros/versiones/asistente",
+                          "slug": "asistente",
+                          "documentId": "fWgpnJJfB8qDhehzHgAz",
+                          "createdAt": "2025-01-07T05:32:58.502Z",
+                          "updatedAt": "2025-01-07T05:32:58.502Z",
+                          "git": {
+                              "oid": "3a940d3abb1b3f7f4aa8e94743ee217657fa0172",
+                              "path": "docs/otros/versiones/asistente.md"
+                          },
+                          "pages": [],
+                          "layout": {
+                              "cover": true,
+                              "coverSize": "full",
+                              "title": true,
+                              "description": true,
+                              "tableOfContents": true,
+                              "outline": true,
+                              "pagination": true
+                          }
+                      }
+                  ],
+                  "layout": {
+                      "cover": true,
+                      "coverSize": "full",
+                      "title": true,
+                      "description": true,
+                      "tableOfContents": true,
+                      "outline": true,
+                      "pagination": true
+                  }
+              }
+          ]
+      }
+  ],
+  "files": [
+      {
+          "id": "kik0gnVFXBVBMbLylLuB",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FUr9cQ3NI1C5G6r70sWx5%2Fimage.png?alt=media&token=3d0484e6-e03b-4d58-822f-167dce5932c5",
+          "contentType": "image/png",
+          "size": 22048,
+          "dimensions": {
+              "width": 447,
+              "height": 200
+          },
+          "git": {
+              "oid": "c7ccf704917a08d09fd1e3fdccf868ac24d66ecf",
+              "path": "docs/.gitbook/assets/image.png"
+          }
+      },
+      {
+          "id": "f8CBtX1TPsBpkQKG7KfY",
+          "name": "Captura de pantalla 2025-01-09 055416.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2Fj4IYDPSqSFQ41uaMz4ZK%2FCaptura%20de%20pantalla%202025-01-09%20055416.png?alt=media&token=235b4a29-49e0-4e16-9d79-8e3c6fd0e4ec",
+          "contentType": "image/png",
+          "size": 32847,
+          "dimensions": {
+              "width": 407,
+              "height": 430
+          },
+          "git": {
+              "oid": "f6d90c57fc293bc2d3795f17d0c1ac53f4457790",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2025-01-09 055416.png"
+          }
+      },
+      {
+          "id": "15HIgXDJo4uA85dAmF6M",
+          "name": "Captura de pantalla 2025-01-09 121032.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FQRk9i2ElgHmswqhNKOId%2FCaptura%20de%20pantalla%202025-01-09%20121032.png?alt=media&token=f162cc88-9fed-4e84-9d55-7edaa386067a",
+          "contentType": "image/png",
+          "size": 270970,
+          "dimensions": {
+              "width": 1858,
+              "height": 915
+          },
+          "git": {
+              "oid": "223ce4535d926b920b2bff26df9cf93aa5632bf0",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2025-01-09 121032.png"
+          }
+      },
+      {
+          "id": "FtTmBr3ScQgc9sDRTJSx",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FtyaFD2AFTXj5Ly8tHyXA%2Fimage.png?alt=media&token=ed136d41-bc67-43be-9052-313b488765bb",
+          "contentType": "image/png",
+          "size": 75089,
+          "dimensions": {
+              "width": 1851,
+              "height": 907
+          },
+          "git": {
+              "oid": "9187686685c1b166a06f777017c6f2fdb955191b",
+              "path": "docs/.gitbook/assets/image (1).png"
+          }
+      },
+      {
+          "id": "8ediFpCvLXXBrvUQLiEr",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FI3wV00YrK5wPWHYLpDMP%2Fimage.png?alt=media&token=915e2ba5-16cb-4801-95a0-b4d8fac61d1a",
+          "contentType": "image/png",
+          "size": 877494,
+          "dimensions": {
+              "width": 1919,
+              "height": 921
+          },
+          "git": {
+              "oid": "85b66fc4e307911a4b0b6990bca24fdc53ba9035",
+              "path": "docs/.gitbook/assets/image (2).png"
+          }
+      },
+      {
+          "id": "q0HJ6fC4ytr1x0xOWHMk",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F9yiwOUTKtU1DTLW7ZblE%2Fimage.png?alt=media&token=6c814dd4-a134-4139-a0e1-d64c1e4da7ee",
+          "contentType": "image/png",
+          "size": 32847,
+          "dimensions": {
+              "width": 407,
+              "height": 430
+          },
+          "git": {
+              "oid": "f6d90c57fc293bc2d3795f17d0c1ac53f4457790",
+              "path": "docs/.gitbook/assets/image (3).png"
+          }
+      },
+      {
+          "id": "6yuFJpqeC4YKiJ8haVQH",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FhZoKJwOc7WOpkFvD6Jrn%2Fimage.png?alt=media&token=012c664d-2b32-4301-89a6-ac87e63da424",
+          "contentType": "image/png",
+          "size": 17001,
+          "dimensions": {
+              "width": 400,
+              "height": 164
+          },
+          "git": {
+              "oid": "7026100e6c72be72c1456188ef7ed27519543d76",
+              "path": "docs/.gitbook/assets/image (1) (1).png"
+          }
+      },
+      {
+          "id": "50C44uqmm2QkyW7ockA5",
+          "name": "swagger.yml",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FBsj1Q2JuLeXXdqGV9TFC%2Fswagger.yml?alt=media&token=1c01dd55-c022-40eb-9912-e2ed368366ce",
+          "contentType": "application/octet-stream",
+          "size": 30057,
+          "git": {
+              "oid": "8a6c6b7b34b96898b428f1762ad2c652ebb941c1",
+              "path": "docs/.gitbook/assets/swagger.yml"
+          }
+      },
+      {
+          "id": "9Le5JOEboiU0hYPxUP1S",
+          "name": "wallhaven-1plww9.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FpxQPLUPNJzBZGzl1M7cy%2Fwallhaven-1plww9.jpg?alt=media&token=1ec6d017-8fd2-45e5-b0ce-c5184c321b8f",
+          "contentType": "image/jpeg",
+          "size": 1612850,
+          "dimensions": {
+              "width": 3329,
+              "height": 1873
+          },
+          "git": {
+              "oid": "28e6abb41919ac6da5184b73472bd887c04081b8",
+              "path": "docs/.gitbook/assets/wallhaven-1plww9.jpg"
+          }
+      },
+      {
+          "id": "YWMHuqFHApL8MMZZK4kn",
+          "name": "Designer (4).jpeg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FpaqmE3SNFGjNAidXWNF9%2FDesigner%20(4).jpeg?alt=media&token=c0f91bfa-bbf0-4759-8115-27f5267cad98",
+          "contentType": "image/jpeg",
+          "size": 219981,
+          "dimensions": {
+              "width": 1024,
+              "height": 1024
+          },
+          "git": {
+              "oid": "a0b324f5fdb6a07b269d4f2c1880cf345abaa2ea",
+              "path": "docs/.gitbook/assets/Designer (4).jpeg"
+          }
+      },
+      {
+          "id": "2UnXq5xzsXhQXURliNxr",
+          "name": "wallhaven-2yqkg9.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FwGfm09CfhbFI55pfMFHf%2Fwallhaven-2yqkg9.jpg?alt=media&token=a7879763-8def-4185-b008-0f51bd9d0342",
+          "contentType": "image/jpeg",
+          "size": 2146534,
+          "dimensions": {
+              "width": 2500,
+              "height": 1250
+          },
+          "git": {
+              "oid": "0302bff4a5e8b2679888b1e5534538f6caa37a6f",
+              "path": "docs/.gitbook/assets/wallhaven-2yqkg9.jpg"
+          }
+      },
+      {
+          "id": "un40KZCTqQnTM0z0G7E3",
+          "name": "wallhaven-o5xp95.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FPIeQ56BXND5Bi9bn7E1F%2Fwallhaven-o5xp95.jpg?alt=media&token=bd376622-3a7b-40d0-828b-2711887a38d3",
+          "contentType": "image/jpeg",
+          "size": 1837477,
+          "dimensions": {
+              "width": 1963,
+              "height": 1200
+          },
+          "git": {
+              "oid": "da4818bb788e10f489ecd2e373cb36a554e8ff45",
+              "path": "docs/.gitbook/assets/wallhaven-o5xp95.jpg"
+          }
+      },
+      {
+          "id": "BjcvO08CRkpYCyHh3JF7",
+          "name": "Captura de pantalla 2024-08-05 195459.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FwKqLeHtGy2BY4xCILieQ%2FCaptura%20de%20pantalla%202024-08-05%20195459.png?alt=media&token=f8fbda87-0895-49d3-90f5-491a16396df7",
+          "contentType": "image/png",
+          "size": 43639,
+          "dimensions": {
+              "width": 1163,
+              "height": 592
+          },
+          "git": {
+              "oid": "0543a73fb544f3688b830697ad04bcedb79f190e",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-08-05 195459.png"
+          }
+      },
+      {
+          "id": "HNMoVNqTRK7a0kSd038z",
+          "name": "Captura de pantalla 2024-08-05 195936.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F67RlG4ORWvUdrARbVb1R%2FCaptura%20de%20pantalla%202024-08-05%20195936.png?alt=media&token=0e1e7663-fb70-4f67-9eab-148bf2b73ccc",
+          "contentType": "image/png",
+          "size": 3470,
+          "dimensions": {
+              "width": 416,
+              "height": 129
+          },
+          "git": {
+              "oid": "0cf08617360846f93e52e495e84e733162e83d1a",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-08-05 195936.png"
+          }
+      },
+      {
+          "id": "WNzqrlylameaeYBgu3Ju",
+          "name": "Captura de pantalla 2024-08-05 200021.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F8sugdjhSr9IjzZbNCc1J%2FCaptura%20de%20pantalla%202024-08-05%20200021.png?alt=media&token=a509aa0b-e0f6-4b29-a39e-d524c0a03354",
+          "contentType": "image/png",
+          "size": 9599,
+          "dimensions": {
+              "width": 551,
+              "height": 64
+          },
+          "git": {
+              "oid": "77b82b6e825b7c0b5ee3bbc33a719de5322bf87b",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-08-05 200021.png"
+          }
+      },
+      {
+          "id": "HpmAy6XIqOlp2vbYx9Io",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F8Pjzp69TCFM8zxUl1hys%2Fimage.png?alt=media&token=872954b4-19b4-4791-8145-43461cbea4b6",
+          "contentType": "image/png",
+          "size": 6577,
+          "dimensions": {
+              "width": 283,
+              "height": 174
+          },
+          "git": {
+              "oid": "4b60a743db4aca4b925945c67189d07a0e967655",
+              "path": "docs/.gitbook/assets/image (2) (1).png"
+          }
+      },
+      {
+          "id": "exnn1XVvaIwoEH0nBZMB",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FtHAveiSGcMtCYGuabAxd%2Fimage.png?alt=media&token=3a0e0d24-de5c-4d64-ae6f-561dd5eeb4e6",
+          "contentType": "image/png",
+          "size": 7456,
+          "dimensions": {
+              "width": 430,
+              "height": 136
+          },
+          "git": {
+              "oid": "eadfb33e1ca3fa47528d8bc4abc3cdaac307cf89",
+              "path": "docs/.gitbook/assets/image (1) (1) (1).png"
+          }
+      },
+      {
+          "id": "MCJdgDwSUljfep9z9lUj",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F3VRAWmFqHOmKFUKKVOVB%2Fimage.png?alt=media&token=02a871a3-4fff-4169-94a8-8373af5803c0",
+          "contentType": "image/png",
+          "size": 7456,
+          "dimensions": {
+              "width": 430,
+              "height": 136
+          },
+          "git": {
+              "oid": "eadfb33e1ca3fa47528d8bc4abc3cdaac307cf89",
+              "path": "docs/.gitbook/assets/image (2) (1) (1).png"
+          }
+      },
+      {
+          "id": "qa1Ll919YLBdqv7cdiUP",
+          "name": "Captura de pantalla 2024-03-25 083716.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FOd7LjLhvL3gFV5rk8zNO%2FCaptura%20de%20pantalla%202024-03-25%20083716.png?alt=media&token=9f5bddcb-3d17-4326-a9ca-1c83e0add0cc",
+          "contentType": "image/png",
+          "size": 269421,
+          "dimensions": {
+              "width": 1365,
+              "height": 767
+          },
+          "git": {
+              "oid": "9d7e95abd42980c8757ea861a79f47c9da3701fb",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-25 083716.png"
+          }
+      },
+      {
+          "id": "cfCdx7L21Gc41rBD6dbE",
+          "name": "Captura de pantalla 2024-03-17 225441.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FFK57Ud99hYA4UUogc80v%2FCaptura%20de%20pantalla%202024-03-17%20225441.png?alt=media&token=a91dff7b-2301-4e30-9de0-6fb5c1618e7c",
+          "contentType": "image/png",
+          "size": 19649,
+          "dimensions": {
+              "width": 483,
+              "height": 164
+          },
+          "git": {
+              "oid": "3710d13044923f969bc9dba48fccc80fc8c8707f",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-17 225441.png"
+          }
+      },
+      {
+          "id": "G2Q8fr9J6MK19sRKhuTI",
+          "name": "ready.ts",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FdaFeuVOhw75ocSHeGKCM%2Fready.ts?alt=media&token=57984cd2-495c-4a7e-b7ec-3873c6072591",
+          "contentType": "video/vnd.dlna.mpeg-tts",
+          "size": 6771,
+          "git": {
+              "oid": "b390f908d9d2b57ce5083e48e77ac984e1c8ae7d",
+              "path": "docs/.gitbook/assets/ready.ts"
+          }
+      },
+      {
+          "id": "hgPcXKxDR9Ovg6nSpKET",
+          "name": "Captura de pantalla 2023-12-23 082621.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FNH6GAvTTmhgzGCrDMbXt%2FCaptura%20de%20pantalla%202023-12-23%20082621.png?alt=media&token=e34b8689-2b3a-4c9a-b33f-0ff2c5373b33",
+          "contentType": "image/png",
+          "size": 13368,
+          "dimensions": {
+              "width": 405,
+              "height": 126
+          },
+          "git": {
+              "oid": "d73fdca76118426638dfe731ef9d643c0a183859",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-12-23 082621.png"
+          }
+      },
+      {
+          "id": "c5ob6ujGi6b9k4G8ZBSx",
+          "name": "Captura de pantalla 2023-12-22 160059.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FHUlz8DxBwQ4PaaJ10y5H%2FCaptura%20de%20pantalla%202023-12-22%20160059.png?alt=media&token=df515a49-2563-498f-b049-1f4d373fe716",
+          "contentType": "image/png",
+          "size": 34530,
+          "dimensions": {
+              "width": 253,
+              "height": 416
+          },
+          "git": {
+              "oid": "1b37d288d4e25a6eec7cdbd1d08cf028d70d919c",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-12-22 160059.png"
+          }
+      },
+      {
+          "id": "p4whmtaBSDlxTeg0Kiuh",
+          "name": "Bomba de Engranajes.zip",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FvwbZitofwtDgc2T7RDCE%2FBomba%20de%20Engranajes.zip?alt=media&token=67828f17-4913-4bf6-9650-2073f34931d6",
+          "contentType": "application/x-zip-compressed",
+          "size": 18555805,
+          "git": {
+              "oid": "e62a42278fe8e847eef2e628be317c9a491dcca4",
+              "path": "docs/.gitbook/assets/Bomba de Engranajes.zip"
+          }
+      },
+      {
+          "id": "F9j0SqK33sDUvaa5jhTo",
+          "name": "Mecanismo Cadena Piñon.zip",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FTfsExmEE3dKUuDnB5ULp%2FMecanismo%20Cadena%20Pi%C3%B1on.zip?alt=media&token=e7ad7b08-7af3-4449-99a0-ee00275b0f40",
+          "contentType": "application/x-zip-compressed",
+          "size": 901116,
+          "git": {
+              "oid": "4b0d7425cdd2fb51b96fc4e0e4d708e308e9fa87",
+              "path": "docs/.gitbook/assets/Mecanismo Cadena Piñon.zip"
+          }
+      },
+      {
+          "id": "evaGjoSo7bpn1MABnTB0",
+          "name": "wallhaven-kxr861.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F6GXskjAefAlOfGpMwAgz%2Fwallhaven-kxr861.jpg?alt=media&token=cd7c2c9d-5739-457b-9511-e4715ffd706b",
+          "contentType": "image/jpeg",
+          "size": 3997675,
+          "dimensions": {
+              "width": 7680,
+              "height": 4320
+          },
+          "git": {
+              "oid": "b11248d6a8ef584bc6cfb30f7d7fd7579224d2f3",
+              "path": "docs/.gitbook/assets/wallhaven-kxr861.jpg"
+          }
+      },
+      {
+          "id": "7GslZReVDCHMGU9t9wGT",
+          "name": "wallhaven-1ppld1.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FiC0dHMoWKdjV79mbWqZs%2Fwallhaven-1ppld1.jpg?alt=media&token=c404481d-d3ea-4f15-9a7a-af133f43891f",
+          "contentType": "image/jpeg",
+          "size": 1498510,
+          "dimensions": {
+              "width": 2450,
+              "height": 1369
+          },
+          "git": {
+              "oid": "2eb6d591abd6bceab08875836fcf06873a3aeae6",
+              "path": "docs/.gitbook/assets/wallhaven-1ppld1.jpg"
+          }
+      },
+      {
+          "id": "812rHl6hEQVFyY1ZimaS",
+          "name": "wallhaven-85pgqk.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F9V9YNs7HS2tb8h6aollO%2Fwallhaven-85pgqk.jpg?alt=media&token=0d4c5b05-0748-41f8-ac4d-39d78b01efbb",
+          "contentType": "image/jpeg",
+          "size": 1091941,
+          "dimensions": {
+              "width": 3840,
+              "height": 2160
+          },
+          "git": {
+              "oid": "8b248a57521ccd4ed879c1b426e35e49699127a4",
+              "path": "docs/.gitbook/assets/wallhaven-85pgqk.jpg"
+          }
+      },
+      {
+          "id": "GFX5Zy4MdzRKOuyhhEiO",
+          "name": "Captura de pantalla 2023-12-04 110759.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FTl61YtTnavzTCNgG99xc%2FCaptura%20de%20pantalla%202023-12-04%20110759.png?alt=media&token=a28b32b5-637f-4058-98cb-e35703e609f3",
+          "contentType": "image/png",
+          "size": 27628,
+          "dimensions": {
+              "width": 1047,
+              "height": 227
+          },
+          "git": {
+              "oid": "0b6d9efb8bcd811fd1cdbe0a6d8227b13be82e5f",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-12-04 110759.png"
+          }
+      },
+      {
+          "id": "o6AEZzKpAczCdVpcqMK6",
+          "name": "Captura de pantalla 2023-09-08 120750.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FRTtHCrPkZIfRQMET5ZhE%2FCaptura%20de%20pantalla%202023-09-08%20120750.png?alt=media&token=547bcb6b-c3bd-471e-8f9a-7a237fa97f3e",
+          "contentType": "image/png",
+          "size": 46147,
+          "dimensions": {
+              "width": 1155,
+              "height": 452
+          },
+          "git": {
+              "oid": "19ad6d6b0e475eeee77debbb66485f9861d4a429",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-09-08 120750.png"
+          }
+      },
+      {
+          "id": "PNPEd8PRVgo36sCBuTCa",
+          "name": "Captura de pantalla 2023-09-16 080051.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FY6qIuRZGTYvyZd2xBuxT%2FCaptura%20de%20pantalla%202023-09-16%20080051.png?alt=media&token=e07ff52a-b050-4264-8392-76e8173047b5",
+          "contentType": "image/png",
+          "size": 140748,
+          "dimensions": {
+              "width": 1324,
+              "height": 631
+          },
+          "git": {
+              "oid": "51f7e82a81cf728aed9dfcb7a3fb387b36d20cac",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-09-16 080051.png"
+          }
+      },
+      {
+          "id": "zfSoPX9mBaRlX8Dt3rAd",
+          "name": "Captura de pantalla 2023-09-15 001846.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FHDIXKtgmoSf6I4Rr3kaR%2FCaptura%20de%20pantalla%202023-09-15%20001846.png?alt=media&token=1012fee2-14bd-4464-94a9-856e2ee6a3c9",
+          "contentType": "image/png",
+          "size": 49344,
+          "dimensions": {
+              "width": 1324,
+              "height": 623
+          },
+          "git": {
+              "oid": "5d18ac8669584b256f0cd1ff8c7cde94b0261798",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-09-15 001846.png"
+          }
+      },
+      {
+          "id": "mQ3pyZZR6Jxc3ZsE6rXr",
+          "name": "Captura de pantalla 2023-09-26 105914.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FRWz376pXKkl81zdmzHG7%2FCaptura%20de%20pantalla%202023-09-26%20105914.png?alt=media&token=b2629ecb-9aae-4dd7-96aa-cb7d6ad71705",
+          "contentType": "image/png",
+          "size": 84425,
+          "dimensions": {
+              "width": 415,
+              "height": 346
+          },
+          "git": {
+              "oid": "353a9bfa65a08ecade4a22cf7995bb62028e1b42",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-09-26 105914.png"
+          }
+      },
+      {
+          "id": "k3KYeKl2LGHEKd1xiJyB",
+          "name": "4.gif",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FrG6Bsie8xPJ1N1ThtQtY%2F4.gif?alt=media&token=45c638e2-24b3-4efd-ac59-3f9f4a712be9",
+          "contentType": "image/gif",
+          "size": 1970514,
+          "dimensions": {
+              "width": 498,
+              "height": 261
+          },
+          "git": {
+              "oid": "bbf9e6bc9a9d139c65d683bf8d6df653e50e5bd6",
+              "path": "docs/.gitbook/assets/4.gif"
+          }
+      },
+      {
+          "id": "etR7cG0Ai1upPdGNAdtj",
+          "name": "6.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FSQRmDHTUV01R4RGmWkMc%2F6.jpg?alt=media&token=9502cbb0-e66c-43d8-8f3e-1bc5bc7fb92a",
+          "contentType": "image/jpeg",
+          "size": 45828,
+          "dimensions": {
+              "width": 564,
+              "height": 564
+          },
+          "git": {
+              "oid": "8ed1ba63b1a57e8378f709f8921fceaa466fbbf6",
+              "path": "docs/.gitbook/assets/6.jpg"
+          }
+      },
+      {
+          "id": "xPE8GSpskJfib0taLXrv",
+          "name": "main-947b7192-1c69-4916-91df-ad865d0809df.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FICaHQIlXtRRXZM3MzP9U%2Fmain-947b7192-1c69-4916-91df-ad865d0809df.png?alt=media&token=4315801a-23ce-4f25-b886-73ebcafcf623",
+          "contentType": "image/png",
+          "size": 1397601,
+          "dimensions": {
+              "width": 1024,
+              "height": 1024
+          },
+          "git": {
+              "oid": "a28b4b92e720824f0ed3d6abae1d405290fd674d",
+              "path": "docs/.gitbook/assets/main-947b7192-1c69-4916-91df-ad865d0809df.png"
+          }
+      },
+      {
+          "id": "Vmd7Qy4k4vYvgVHj71xz",
+          "name": "08c6cdc3c8b2b3bd126749e796262c21.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F3Z1Z3fzlvxGJ47OGIlyr%2F08c6cdc3c8b2b3bd126749e796262c21.png?alt=media&token=f4b4dc2f-ac5b-4218-9ae3-d21cb3b8dd35",
+          "contentType": "image/png",
+          "size": 980,
+          "dimensions": {
+              "width": 128,
+              "height": 128
+          },
+          "git": {
+              "oid": "cc0acbfc65c1815e2ea5a8c4075bb9335dda04ab",
+              "path": "docs/.gitbook/assets/08c6cdc3c8b2b3bd126749e796262c21.png"
+          }
+      },
+      {
+          "id": "wruwRTaJhzCRKfoJ3hRN",
+          "name": "Captura de pantalla 2023-12-03 162722.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FH3fs5gC7A3mYe4xSmEAp%2FCaptura%20de%20pantalla%202023-12-03%20162722.png?alt=media&token=6b9a14ee-175a-4b3d-9367-0094a410b188",
+          "contentType": "image/png",
+          "size": 12031,
+          "dimensions": {
+              "width": 405,
+              "height": 76
+          },
+          "git": {
+              "oid": "5fba27da9bc3ae59fec71ed5c7a6406c77238c9f",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-12-03 162722.png"
+          }
+      },
+      {
+          "id": "EgYrviAUvk3K37gOaeFG",
+          "name": "wallhaven-jxl31y.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FbLUAA9g5HF4kqumoWIoL%2Fwallhaven-jxl31y.png?alt=media&token=4ebc04cb-0778-4d6f-b81d-396a4cf6066a",
+          "contentType": "image/png",
+          "size": 3350241,
+          "dimensions": {
+              "width": 2340,
+              "height": 1080
+          },
+          "git": {
+              "oid": "1b4da3831bf0052a69543d95db94a443c333a6ee",
+              "path": "docs/.gitbook/assets/wallhaven-jxl31y.png"
+          }
+      },
+      {
+          "id": "iwGT2nOKnklW9cvvI6L9",
+          "name": "wallhaven-858lz1.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2Fg0vWYTgRRWDh9HE9AyK1%2Fwallhaven-858lz1.png?alt=media&token=65ce4d00-e9c8-41a6-9e6d-fa579ff94366",
+          "contentType": "image/png",
+          "size": 5128890,
+          "dimensions": {
+              "width": 2560,
+              "height": 1440
+          },
+          "git": {
+              "oid": "e6ce3b40b8212df4e294354c4b693a9f34f5ef59",
+              "path": "docs/.gitbook/assets/wallhaven-858lz1.png"
+          }
+      },
+      {
+          "id": "kzrjxw1YrmTrOaPMqkDM",
+          "name": "wallhaven-1poo61.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2Ff4ng7hwrrUcHys3ZjtHD%2Fwallhaven-1poo61.jpg?alt=media&token=442e6f2e-8a58-4eb2-b9c3-681b0f67833f",
+          "contentType": "image/jpeg",
+          "size": 1478659,
+          "dimensions": {
+              "width": 2688,
+              "height": 1536
+          },
+          "git": {
+              "oid": "53f0b5235c197d1eee370de9d0da86d2e5770784",
+              "path": "docs/.gitbook/assets/wallhaven-1poo61.jpg"
+          }
+      },
+      {
+          "id": "YN4BP2qjucgN1OcnlFmQ",
+          "name": "Captura de pantalla 2023-11-09 185634.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F4KEnVc370PjVK7RvkANN%2FCaptura%20de%20pantalla%202023-11-09%20185634.png?alt=media&token=131c6de6-8ab4-4878-8363-e9a6013057c7",
+          "contentType": "image/png",
+          "size": 543196,
+          "dimensions": {
+              "width": 755,
+              "height": 573
+          },
+          "git": {
+              "oid": "eb886ce3e015042d7c5e35d283be7b987e660eed",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2023-11-09 185634.png"
+          }
+      },
+      {
+          "id": "Hysh9Bm8BRctiKi4iGCb",
+          "name": "Garra Mecanica.zip",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FKFVuGHiSFTA1ckinldAr%2FGarra%20Mecanica.zip?alt=media&token=386142c4-513b-46bf-b786-4a7cb721793c",
+          "contentType": "application/x-zip-compressed",
+          "size": 6123540,
+          "git": {
+              "oid": "8098a1adfc0d8095021742e25bcf4585d09b4dfc",
+              "path": "docs/.gitbook/assets/Garra Mecanica.zip"
+          }
+      },
+      {
+          "id": "3dtrz70yubxqBzSgOxfs",
+          "name": "87962dbb2ab28f9e28e3037f8fd5fbd5.jpg",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2F5zChLzAqb3Nj7PJE2K70%2F87962dbb2ab28f9e28e3037f8fd5fbd5.jpg?alt=media&token=5af87425-96cf-4d17-ac8f-497da91313f4",
+          "contentType": "image/jpeg",
+          "size": 35330,
+          "dimensions": {
+              "width": 564,
+              "height": 317
+          },
+          "git": {
+              "oid": "41db4ba9f460726efe9bb476b4f4f75921540ed5",
+              "path": "docs/.gitbook/assets/87962dbb2ab28f9e28e3037f8fd5fbd5.jpg"
+          }
+      },
+      {
+          "id": "l2cA6BslYxhXzixwHCAx",
+          "name": "Captura de pantalla 2024-03-24 155014.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FjjftC21PkVh5a5BsMGKP%2FCaptura%20de%20pantalla%202024-03-24%20155014.png?alt=media&token=55d2c656-af77-4eb7-809b-07d7ba30c80b",
+          "contentType": "image/png",
+          "size": 24100,
+          "dimensions": {
+              "width": 430,
+              "height": 193
+          },
+          "git": {
+              "oid": "59a6ef120384a325964be3bd23c99dc7a3c39a2b",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-24 155014.png"
+          }
+      },
+      {
+          "id": "FnmH9IrXKIEyphk8fuBz",
+          "name": "Captura de pantalla 2024-03-25 140553.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FU7nf6wLsnaAkYj5gt8gS%2FCaptura%20de%20pantalla%202024-03-25%20140553.png?alt=media&token=2721ad38-df4d-488f-a5e1-fde8b32cec5b",
+          "contentType": "image/png",
+          "size": 128218,
+          "dimensions": {
+              "width": 1321,
+              "height": 607
+          },
+          "git": {
+              "oid": "26eec7b46b006d327d7ec529650735a6a0631b3a",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-25 140553.png"
+          }
+      },
+      {
+          "id": "fih7vXYofBSC4trcnTTD",
+          "name": "Captura de pantalla 2024-03-26 155851.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2Fn0lNWEutvMYTmtSTsHsa%2FCaptura%20de%20pantalla%202024-03-26%20155851.png?alt=media&token=e1ca6457-17b7-49a6-94a0-4044f9a33a0c",
+          "contentType": "image/png",
+          "size": 128276,
+          "dimensions": {
+              "width": 1323,
+              "height": 612
+          },
+          "git": {
+              "oid": "5d0cec062012f800afe287f73ead6c7412b7518f",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-26 155851.png"
+          }
+      },
+      {
+          "id": "xm9DGBapuhj8tkUrYgLZ",
+          "name": "Captura de pantalla 2024-03-26 155929.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FBcRSzW1tT1bev6qWYBfe%2FCaptura%20de%20pantalla%202024-03-26%20155929.png?alt=media&token=a23ba9af-1954-4249-b8ca-abc7e5b273cf",
+          "contentType": "image/png",
+          "size": 206297,
+          "dimensions": {
+              "width": 1365,
+              "height": 602
+          },
+          "git": {
+              "oid": "401e90ab8ef932dc143f9b3be1d633f17240105f",
+              "path": "docs/.gitbook/assets/Captura de pantalla 2024-03-26 155929.png"
+          }
+      },
+      {
+          "id": "VJ9y37nuAjH1atLadLB1",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FQPf3Uv7LPv8PUcwSEfKZ%2Fimage.png?alt=media&token=fe2713d1-ba7d-41d4-929b-51b36eb048bc",
+          "contentType": "image/png",
+          "size": 27646,
+          "dimensions": {
+              "width": 984,
+              "height": 877
+          },
+          "git": {
+              "oid": "943c6121a9a5f430435ab2dbbb3c62f40856e963",
+              "path": "docs/.gitbook/assets/image (3) (1).png"
+          }
+      },
+      {
+          "id": "8DLxzPqeSEWPWnE3GcAD",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2FXd4BWHX5YWycyDrKltWR%2Fimage.png?alt=media&token=61425200-ec14-4bb2-8cd5-c99801828e84",
+          "contentType": "image/png",
+          "size": 21256,
+          "dimensions": {
+              "width": 987,
+              "height": 819
+          },
+          "git": {
+              "oid": "628b4ca1d0615d0e9ca3bef7d6c1c530b616fdc4",
+              "path": "docs/.gitbook/assets/image (4).png"
+          }
+      },
+      {
+          "id": "in3i4BhmgR4iX2UTwpZK",
+          "name": "image.png",
+          "downloadURL": "https://930230281-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FwcPaiRJyJLT1TyzKN3hE%2Fuploads%2Fy78uZutmRpitZQDHUTLO%2Fimage.png?alt=media&token=ac7f1024-b1ff-4918-a4e6-365c057dfaeb",
+          "contentType": "image/png",
+          "size": 21256,
+          "dimensions": {
+              "width": 987,
+              "height": 819
+          },
+          "git": {
+              "oid": "628b4ca1d0615d0e9ca3bef7d6c1c530b616fdc4",
+              "path": "docs/.gitbook/assets/image (5).png"
+          }
+      }
+  ],
+  "reusableContents": [],
+  "urls": {
+      "app": "https://app.gitbook.com/s/wcPaiRJyJLT1TyzKN3hE/~/revisions/df7qMiLVeR01HIjL5Zds/",
+      "published": "https://docs.hiroshi-dev.me/~/revisions/df7qMiLVeR01HIjL5Zds/",
+      "public": "https://docs.hiroshi-dev.me/~/revisions/df7qMiLVeR01HIjL5Zds/"
+  },
+  "createdAt": "2025-01-10T03:52:53.850Z",
+  "git": {
+      "oid": "91b8cfa6cabd682630d06b01a188b66de1c4d9c6",
+      "message": "GITBOOK-111: change request with no subject merged in GitBook",
+      "createdByGitBook": true,
+      "url": "https://github.com/MikaboshiDev/Bot-Manager/commit/91b8cfa6cabd682630d06b01a188b66de1c4d9c6",
+      "ref": "refs/heads/master"
+  },
+  "type": "merge",
+  "mergedFrom": {
+      "object": "change-request",
+      "id": "LxHticKfMPxqFHlsMOlw",
+      "status": "merged",
+      "subject": "",
+      "number": 111,
+      "revision": "8xl2InMr7uVpHaMSwaKS",
+      "revisionInitial": "yDc8vfQBXLlC8u5QGU4q",
+      "revisionMerged": "df7qMiLVeR01HIjL5Zds",
+      "outdated": false,
+      "comments": 0,
+      "createdBy": {
+          "object": "user",
+          "id": "dtfe6ciNTTVCJjNkn2DpqGGjPlT2",
+          "displayName": "Hiroshi",
+          "email": "luisantonio200386@gmail.com",
+          "photoURL": "https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/users%2Fdtfe6ciNTTVCJjNkn2DpqGGjPlT2%2Favatars%2F3SgqoysY9qa8zVqW8eEA%2F84ef8fa388dfa68ed0a3d2fd9d88b53b.jpg?alt=media&token=d329108d-b067-4f77-8f9c-6c77ebb5ac2c",
+          "urls": {
+              "location": "/users/dtfe6ciNTTVCJjNkn2DpqGGjPlT2"
+          }
+      },
+      "createdAt": "2025-01-10T03:19:17.436Z",
+      "updatedAt": "2025-01-10T03:52:53.000Z",
+      "urls": {
+          "app": "https://app.gitbook.com/o/6PghA7mfb87e1tALVrdg/s/wcPaiRJyJLT1TyzKN3hE/~/changes/LxHticKfMPxqFHlsMOlw/",
+          "location": "/spaces/wcPaiRJyJLT1TyzKN3hE/change-requests/111"
+      }
+  }
+}

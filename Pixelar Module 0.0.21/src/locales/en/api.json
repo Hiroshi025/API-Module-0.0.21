@@ -1,0 +1,85 @@
+{
+  "controllers": {
+    "public": {
+      "health": {
+        "200": "The server is running",
+        "500": "Failed to obtain server metrics"
+      },
+      "rolelist": {
+        "200": "API Role List"
+      }
+    },
+    "nekos": {
+      "animelist": {
+        "400": {
+          "notfoundfields": "Missing fields in the request or the fields are not valid",
+          "invalidurl": "No anime found with that name on the animelist website",
+          "invalidchannel": "The announcement channel cannot be a Discord voice channel",
+          "alreadyexists": "An announcement for that anime already exists in the announcement channel [{{channelid}}]({{linkfound}}) in {{channel}}"
+        },
+        "200": {
+          "success": "Announcements will now be made for {{datafound}}"
+        }
+      }
+    },
+    "gemini": {
+      "generate": {
+        "500": {
+          "error": "An error occurred while generating the response from the Gemini service"
+        }
+      },
+      "info": {
+        "500": {
+          "error": "An error occurred while retrieving the information from the webpage"
+        }
+      }
+    },
+    "source": {
+      "get": {
+        "200": {
+          "sourcecodefound": "Source code found"
+        },
+        "500": {
+          "failedtogetsourcecode": "An error occurred while retrieving the source code from the database"
+        }
+      },
+      "create": {
+        "200": {
+          "sourcecodesaved": "Source code saved"
+        },
+        "400": {
+          "notfoundfields": "Missing fields in the request or the fields are not valid"
+        },
+        "500": {
+          "failedtosavesourcecode": "An error occurred while saving the source code to the database"
+        }
+      },
+      "delete": {
+        "200": {
+          "sourcecodedeleted": "Source code deleted"
+        },
+        "500": {
+          "failedtodeletesourcecode": "An error occurred while deleting the source code from the database"
+        }
+      },
+      "update": {
+        "200": {
+          "sourcecodeupdated": "Source code updated"
+        },
+        "500": {
+          "failedtoupdatesourcecode": "An error occurred while updating the source code in the database"
+        }
+      },
+      "getsource": {
+        "404": {
+          "sourcenotfound": "Source code not found"
+        }
+      },
+      "gettasks": {
+        "400": {
+          "nottasksfound": "No tasks found"
+        }
+      }
+    }
+  }
+}

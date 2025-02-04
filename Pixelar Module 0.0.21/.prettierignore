@@ -1,0 +1,9 @@
+docs/*
+public/*
+config/*
+sqlite/*
+temp/*
+
+**/*.test.ts
+**/*.spec.ts
+**/*.routes.ts

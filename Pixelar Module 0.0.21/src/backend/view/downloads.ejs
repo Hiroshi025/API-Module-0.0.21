@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <%- include('./partials/meta'); %>
+    <title>
+      <%= botname %> - Downloads
+    </title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="/vendor/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="/vendor/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="/vendor/jvectormap/jquery-jvectormap.css" />
+    <link rel="stylesheet" href="/vendor/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="/vendor/owl-carousel-2/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/vendor/owl-carousel-2/owl.theme.default.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- End layout styles -->
+    <link rel="icon" type="image/png" href="/assets/images/logo.jpg" />
+    <style>
+      .card-product {
+        max-width: 500px;
+        /* Tamaño reducido */
+        margin: auto;
+        background-color: #2a3038;
+        /* Color de fondo de la tarjeta */
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        /* Altura controlada de la imagen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-gradient {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        /* Ajusta la altura del degradado según sea necesario */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #2c2f33 100%);
+        z-index: 2;
+      }
+
+      .card-img {
+        width: 95%;
+        /* Imagen más pequeña */
+        filter: blur(3px);
+        /* Efecto borroso */
+        border-radius: 5px;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+      .card-description {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+
+      .card-id {
+        font-size: 12px;
+        margin: 10px 0;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <%- include('./partials/sidebar'); %>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo-mini" href="/web/welcome"><img src="/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <ul class="navbar-nav w-100">
+            <li class="nav-item w-100">
+              <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                <input type="text" class="form-control" placeholder="Search products" />
+              </form>
+            </li>
+          </ul>
+          <%- include('./partials/headers'); %>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+              data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <!-- Quiero crear cuadros de descarga  -->
+          <div class="products">
+            <div class="row justify-content-center">
+              <% if (productsArray.length> 0) { %>
+                <% productsArray.forEach(product=> { %>
+                  <div class="col-md-3 grid-margin stretch-card">
+                    <div class="card-product">
+                      <div class="card-image-wrapper">
+                        <img src="<%= product.image %>" alt="<%= product.name %>" class="card-img" />
+                        <div class="image-gradient"></div> <!-- Elemento degradado -->
+                      </div>
+                      <div class="card-body text-center">
+                        <h4 class="card-title">
+                          <%= product.name %>
+                        </h4>
+                        <p class="card-description">
+                          <%= product.description.substring(0, 100).concat('...') %>
+                        </p>
+                        <p class="card-id">ID: <%= product.id %>
+                        </p>
+                        <a href="<%= product.url %>" class="btn btn-lg btn-inverse-primary btn-rounded">Download</a>
+                      </div>
+                    </div>
+                  </div>
+                  <% }); %>
+                    <% } else { %>
+                      <div class="col-md-12 text-center">
+                        <div class="alert alert-warning" role="alert">
+                          No hay productos disponibles en este momento.
+                        </div>
+                      </div>
+                      <% } %>
+            </div>
+          </div>
+          <!-- ...repetir el bloque anterior para más cuadros de descarga... -->
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+      <!-- plugins:js -->
+      <script src="/vendor/js/vendor.bundle.base.js"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page -->
+      <script src="/vendor/chart.js/Chart.min.js"></script>
+      <script src="/vendor/progressbar.js/progressbar.min.js"></script>
+      <script src="/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+      <script src="/vendor/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+      <script src="/vendor/owl-carousel-2/owl.carousel.min.js"></script>
+      <!-- End plugin js for this page -->
+      <!-- inject:js -->
+      <script src="/js/off-canvas.js"></script>
+      <script src="/js/hoverable-collapse.js"></script>
+      <script src="/js/misc.js"></script>
+      <script src="/js/settings.js"></script>
+      <script src="/js/todolist.js"></script>
+      <!-- endinject -->
+      <!-- Custom js for this page -->
+      <script src="/js/dashboard.js"></script>
+      <!-- End custom js for this page -->
+</body>
+
+</html>

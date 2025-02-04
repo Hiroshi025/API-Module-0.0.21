@@ -1,0 +1,297 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Guild {
+  id        String   @id @default(cuid()) @map("_id")
+  guildId   String   @unique
+  guildName String?
+  prefix    String   @default("!")
+  language  String   @default("en")
+  captcha   Captcha?
+  rooms     Rooms?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Modmail {
+  id          String  @id @default(cuid()) @map("_id")
+  enabled     Boolean
+  guildId     String
+  channelId   String
+  moderatorId String
+}
+
+model User {
+  id        String       @id @default(cuid()) @map("_id")
+  userId    String       @unique
+  username  String?
+  guildId   String
+  messages  Int          @default(0)
+  tickets   UserTicket[]
+  warns     UserWarns[]
+  anonymous Boolean      @default(true)
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model Logs {
+  id        String   @id @default(cuid()) @map("_id")
+  guildId   String   @unique
+  channelId String? //Id del canal de logs
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Tickets {
+  id           String          @id @default(cuid()) @map("_id")
+  guildId      String          @unique //Id del servidor
+  channelId    String? //Id del canal dende se enviara el formulario
+  categoryId   String? //Id de la categoria donde se crearan los tickets
+  transcriptId String? //Id del canal de transcripción
+  roleId       String? //Id del rol que podra ver los tickets
+  message      String? //Mensaje que se enviara al canal de tickets
+  ticketformat String          @default("🎟️-ticket-{ticket}")
+  options      OptionsTicket[] //Opciones que se mostraran en el formulario
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+}
+
+// MODAL API AUTHENTICATION //
+model Auth {
+  id        String   @id @default(cuid()) @map("_id")
+  discord   String   @unique
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  rol       String   @default("user")
+  email     String   @unique
+  password  String
+}
+
+// MODAL TASKS //
+model Tasks {
+  id        String   @id @default(cuid()) @map("_id")
+  userId    String
+  guildId   String
+  taskId    Int      @unique
+  content   String
+  status    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// MODAL ORDERS CLIENT //
+model Order {
+  id       String   @id @default(cuid()) @map("_id")
+  image    String
+  name     String
+  userId   String
+  number   Int      @unique
+  price    Int
+  quantity String
+  metode   String
+  info     String
+  date     DateTime @default(now())
+  status   String   @default("Pending")
+}
+
+// MODAL MESSAGE WHATSAPP //
+model MessageWhatsapp {
+  id        String   @id @default(cuid()) @map("_id")
+  username  String
+  userId    String
+  message   String
+  response  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// MODAL SOURCE BIN //
+model SourceBin {
+  id        String   @id @default(cuid()) @map("_id")
+  userId    String
+  title     String
+  content   String
+  lenguage  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// MODAL CRYPTO BOT //
+model BotCrypto {
+  id        String   @id @default(cuid()) @map("_id")
+  enabled   Boolean
+  token     String   @unique
+  coinId    String
+  preferred String
+  frequency Int      @default(5)
+  symbol    String
+  separator String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// PRODUCT FILE DOWNLOAD //
+model FreeProduct {
+  id          String   @id @default(cuid()) @map("_id")
+  userId      String
+  productId   String   @unique
+  productname String
+  image       String
+  url         String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ServerModlogs {
+  id        String @id @default(cuid()) @map("_id")
+  guildId   String @unique
+  channelId String
+}
+
+type UserWarns {
+  warnId     String
+  warnReason String
+  warnDate   String
+  moderator  String
+}
+
+type OptionsTicket {
+  name        String
+  description String
+  value       String
+  emoji       String
+}
+
+type UserTicket {
+  id        Int?
+  userId    String   @default("")
+  channelId String
+  guildId   String
+  reason    String
+  closed    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+type Rooms {
+  channelId String?
+}
+
+//********* ANILIST MODULE *********//
+model WatchConfig {
+  id                String  @id @default(cuid()) @map("_id")
+  channelId         String
+  anilistId         Int
+  pingRole          String?
+  createThreads     Boolean @default(false)
+  threadArchiveTime Int     @default(60)
+  completed         Boolean @default(false)
+}
+
+model ServerConfig {
+  id               String  @id @default(auto()) @map("_id") @db.ObjectId
+  serverId         String  @unique
+  permission       String  @default("OWNER")
+  permissionRoleId String?
+  titleFormat      String  @default("ROMAJI")
+}
+
+model WatchRecord {
+  id   Int      @id @map("_id")
+  type String
+  name String
+  user String[]
+}
+
+//********* ANILIST MODULE *********//
+
+//********* ECONOMY MODULE *********//
+
+model Economy {
+  id             String @id @default(cuid()) @map("_id")
+  guildId        String
+  currencyName   String
+  currencyEmoji  String
+  currencyPerMsg String
+}
+
+model Inventory {
+  id              String @id @default(cuid()) @map("_id")
+  guildId         String
+  userId          String
+  itemIdentifier  String
+  itemName        String
+  itemDescription String
+  itemPrice       Int
+  role            String
+  money           Float
+}
+
+model Shop {
+  id              String  @id @default(cuid()) @map("_id")
+  guildId         String
+  itemName        String
+  itemDescription String
+  itemPrice       Int
+  itemIdentifier  String // Unique identifier for every item (auto generated 16bit token) or user set
+  role            String? // the role to give to the user when he uses the item
+  money           Float? // amount of money to give to the user when he uses the item
+}
+
+model UserEconomy {
+  id      String @id @default(cuid()) @map("_id")
+  guildId String
+  userId  String
+  balance Float  @default(0)
+}
+
+//********* ECONOMY MODULE *********//
+
+//********* LEVELS MODULE *********//
+
+model UserLevel {
+  id          String  @id @default(cuid()) @map("_id")
+  guildId     String
+  userId      String
+  xp          Int
+  level       Int
+  background  String?
+  barColor    String?
+  borderColor String?
+  blur        Int?
+
+  @@unique([guildId, userId]) // Clave única compuesta
+}
+
+model LevelConfig {
+  id        String  @id @default(cuid()) @map("_id")
+  guildId   String
+  channelId String?
+  status    Boolean
+}
+
+//********* LEVELS MODULE *********//
+
+//********* CAPCHA MODULE *********//
+
+model Captcha {
+  id        String  @id @map("_id")
+  isEnabled Boolean @default(false)
+  role      String
+  guild     Guild   @relation(fields: [id], references: [id])
+}
+
+//********* CAPCHA MODULE *********//

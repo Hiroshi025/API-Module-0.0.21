@@ -1,0 +1,85 @@
+{
+  "controllers": {
+    "public": {
+      "health": {
+        "200": "El servidor esta en funcionamiento",
+        "500": "Fallo al obtener las metricas del servidor"
+      },
+      "rolelist": {
+        "200": "Lista de Roles de la API"
+      }
+    },
+    "nekos": {
+      "animelist": {
+        "400": {
+          "notfoundfields": "Faltan campos en la solicitud o los campos no son validos",
+          "invalidurl": "No se encontro ningun anime con ese nombre dentro de la web de animelist",
+          "invalidchannel": "El canal de anuncios no puede ser un canal de voz de discord",
+          "alreadyexists": "Ya existe un anuncio de ese anime en el canal de anuncios [{{channelid}}]({{linkfound}}) en {{channel}}"
+        },
+        "200": {
+          "success": "Ahora se harán anuncios para {{datafound}}"
+        }
+      }
+    },
+    "gemini": {
+      "generate": {
+        "500": {
+          "error": "A ocurrido un error al generar ka respuesta por parte del servicio de Gemini"
+        }
+      },
+      "info": {
+        "500": {
+          "error": "A ocurrido un error al obtener la informacion de la pagina web"
+        }
+      }
+    },
+    "source": {
+      "get": {
+        "200": {
+          "sourcecodefound": "Codigo fuente encontrado"
+        },
+        "500": {
+          "failedtogetsourcecode": "A ocurrido un error al obtener el codigo fuente de la base de datos"
+        }
+      },
+      "create": {
+        "200": {
+          "sourcecodesaved": "Codigo fuente guardado"
+        },
+        "400": {
+          "notfoundfields" : "Faltan campos en la solicitud o los campos no son validos"
+        },
+        "500": {
+          "failedtosavesourcecode": "A ocurrido un error al guardar el codigo fuente en la base de datos"
+        }
+      },
+      "delete": {
+        "200": {
+          "sourcecodedeleted": "Codigo fuente eliminado"
+        },
+        "500": {
+          "failedtodeletesourcecode": "A ocurrido un error al eliminar el codigo fuente de la base de datos"
+        }
+      },
+      "update": {
+        "200": {
+          "sourcecodeupdated": "Codigo fuente actualizado"
+        },
+        "500": {
+          "failedtoupdatesourcecode": "A ocurrido un error al actualizar el codigo fuente de la base de datos"
+        }
+      }
+    },
+    "getsource": {
+      "404": {
+        "sourcenotfound": "Codigo fuente no encontrado"
+      }
+    },
+    "gettasks": {
+      "400": {
+        "nottasksfound": "No se encontraron tareas"
+      }
+    }
+  }
+}

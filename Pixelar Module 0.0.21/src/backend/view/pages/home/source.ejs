@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Sofia Devs - Codewrite" />
+  <meta name="description" content="Code Viewer, Easily view, edit and share your code" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://panel.hiroshi-dev.me/web/sources/" />
+  <meta property="og:title" content="Sofia Devs - Codewrite" />
+  <meta property="og:description" content="Code Viewer, Easily view, edit and share your code" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://panel.hiroshi-dev.me/web/sources/" />
+  <meta property="twitter:title" content="Sofia Devs - Codewrite" />
+  <meta property="twitter:description" content="Code Viewer, Easily view, edit and share your code" />
+
+  <!-- Meta Tags Generated with https://metatags.io -->
+  <link rel="icon" type="image/png" href="/assets/images/logo.jpg" />
+  <link rel="stylesheet" href="/css/source.css" />
+  
+  <title>Code - Viewer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-highlight/prism-line-highlight.min.js">
+  </script>
+</head>
+
+<body>
+  <div class="conteiner">
+    <header>
+      <h1>Code Viewer</h1>
+      <p>Easily view, edit and share your code</p>
+    </header>
+    <main>
+      <section class="header-container">
+        <h2 id="snippet-title">
+          <%= codeSource.title ? codeSource.title : "" %>
+        </h2>
+        <select id="language-selector" class="language-selector">
+          <option value="typescript">TypeScript</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+        </select>
+      </section>
+      <section class="code-container">
+        <pre class="code-view line-numbers">
+        <code id="snippet-content" class="language-typescript">
+          <%= codeSource.content ? codeSource.content : "console.log(`Hola Mundo`)" %>
+        </code>
+           </pre>
+        <div class="buttons">
+          <button id="copy-btn" class="copy-button">Copy</button>
+          <button id="delete-btn" class="delete-button">Delete</button>
+        </div>
+      </section>
+      <section class="code-container">
+        <h2>
+          Code Editor: <%= codeSource.title ? codeSource.title : "" %>
+        </h2>
+        <textarea id="editor" rows="10" cols="50">
+            <%= codeSource.content ? codeSource.content : "console.log(`Hola Mundo`)" %>
+          </textarea>
+        <div class="form-date">
+          <div class="forms">
+            <label>User ID: </label>
+            <input type="text" id="user-id" placeholder="<%= codeSource.userId ? codeSource.userId : " User ID" %>"
+            />
+          </div>
+          <div class="forms">
+            <label>Title: </label>
+            <input type="text" id="snippet-id" placeholder="<%= codeSource.title ? codeSource.title : " Snippet ID" %>"
+            />
+          </div>
+          <div class="forms">
+            <label>Language: </label>
+            <input type="text" id="language-id" placeholder="<%= codeSource.lenguage ? codeSource.lenguage : " Language"
+              %>"
+            />
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button id="save-btn" class="save-button">Save</button>
+          <button id="cancel-btn" class="delete-button">Cancel</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created with ❤️ by Sofia Devs - Asistent 2024</p>
+    </footer>
+  </div>
+  <script>
+    const snippetTitle = document.getElementById("snippet-title");
+    const snippetContent = document.getElementById("snippet-content");
+    const editor = document.getElementById("editor");
+
+    const copyBtn = document.getElementById("copy-btn");
+    const deleteBtn = document.getElementById("delete-btn");
+
+    const saveBtn = document.getElementById("save-btn");
+    const cancelBtn = document.getElementById("cancel-btn");
+
+    const userId = document.getElementById("user-id");
+
+    const languageSelector = document.getElementById("language-selector");
+    const languageId = document.getElementById("language-id");
+
+    const snippetId = document.getElementById("snippet-id");
+
+
+    languageSelector.addEventListener("change", (event) => {
+      const selectedLanguage = event.target.value;
+
+      // Cambiar la clase del <code> para el nuevo lenguaje
+      snippetContent.className = `language-${selectedLanguage}`;
+
+      // Vuelve a resaltar el código
+      Prism.highlightElement(snippetContent);
+    });
+
+    //cuando hago click en el boton copy se copia el contenido del code-view
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(snippetContent.textContent);
+      alert("Snippet copied");
+    });
+
+    //cuando hago click en el boton delete se borra el contenido del code-view
+    deleteBtn.addEventListener("click", () => {
+      editor.value = "";
+      snippetContent.textContent = "";
+      alert("Snippet deleted");
+    });
+
+    //cuando hago click en el boton save se guarda el contenido del code-view a una api
+    saveBtn.addEventListener("click", async () => {
+      const response = await fetch("/api/v1/sources", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userId: userId.value,
+          title: snippetId.value,
+          content: editor.value,
+          lenguage: languageId.value,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          alert("Code: " + data.data.data.id);
+
+          //limpio el editor y el code-view
+          editor.value = "";
+          snippetContent.textContent = "";
+          userId.value = "";
+          snippetId.value = "";
+          languageId.value = "";
+        })
+        .catch((err) => {
+          alert("Error: " + err);
+          console.log(err);
+        });
+    });
+
+    //cuando hago click en el boton cancel se borra el contenido del code-view
+    cancelBtn.addEventListener("click", () => {
+      editor.value = "";
+      snippetContent.textContent = "";
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      Prism.highlightAll();
+    });
+  </script>
+  <script>
+    function debounce(func, wait) {
+      let timeout;
+      return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+    }
+
+    const updateCodeView = debounce(() => {
+      snippetContent.textContent = editor.value;
+      Prism.highlightElement(snippetContent);
+    }, 300); // 300ms de retraso
+
+    editor.addEventListener("input", updateCodeView);
+  </script>
+</body>
+
+</html>
