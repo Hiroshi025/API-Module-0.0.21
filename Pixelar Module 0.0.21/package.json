@@ -1,6 +1,6 @@
 {
   "name": "sofia-asistent",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "scripts": {
     "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src --entryPointStrategy expand",
     "start": "npm run push && npm run test && npm run docs && npm run release",
