@@ -65,6 +65,7 @@ bot:
         title: "" 
         description: ""
     options:
+      max-iamoderation-ticket: 60
       max-ticket-amout: 5
       times:
         time-1: 23

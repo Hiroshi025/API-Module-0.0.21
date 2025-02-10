@@ -196,18 +196,58 @@ const OPTTicket: Modals = {
             ])
         );
 
-        //IDEA: crear las opciones de claim y unclaim
+        const dbticket = await manager.prisma.user.findFirst({
+          where: {
+            userId: interaction.user.id,
+            guildId: interaction.guild.id,
+            tickets: {
+              some: {
+                channelId: channel.id,
+              },
+            },
+          },
+        });
+
+        const mode_chatgot = dbticket ? dbticket.tickets[0].iamoderation : false;
+
         const buttons = new ActionRowBuilder<ButtonBuilder>().addComponents(
           new ButtonBuilder()
-            .setStyle(ButtonStyle.Success)
+            .setStyle(ButtonStyle.Secondary)
             .setLabel("Claim")
             .setEmoji(client.getEmoji(interaction.guildId as string).tickets.claim)
             .setCustomId("tickets:create-send:select-menu:button:claim-send"),
           new ButtonBuilder()
-            .setStyle(ButtonStyle.Primary)
+            .setStyle(ButtonStyle.Secondary)
             .setLabel("Renunce")
             .setEmoji(client.getEmoji(interaction.guildId as string).tickets.unclaim)
-            .setCustomId("tickets:create-send:select-menu:button:renunce-send")
+            .setCustomId("tickets:create-send:select-menu:button:renunce-send"),
+          new ButtonBuilder()
+            .setStyle(ButtonStyle.Secondary)
+            .setLabel("Chat GPT")
+            .setCustomId("tickets:create-send:select-menu:button:chatgpt")
+            .setDisabled(mode_chatgot)
+        );
+
+        const buttons_tools = new ActionRowBuilder<ButtonBuilder>().addComponents(
+          new ButtonBuilder()
+            .setCustomId("tickets:tools-add:user")
+            .setLabel("Add User")
+            .setEmoji(client.getEmoji(interaction.guildId as string).tickets.add)
+            .setStyle(ButtonStyle.Secondary),
+          new ButtonBuilder()
+            .setCustomId("tickets:tools-remove:user")
+            .setLabel("Remove User")
+            .setEmoji(client.getEmoji(interaction.guildId as string).tickets.remove)
+            .setStyle(ButtonStyle.Secondary),
+          new ButtonBuilder()
+            .setCustomId("tickets:tools-rename")
+            .setLabel("Rename Ticket")
+            .setEmoji(client.getEmoji(interaction.guildId as string).tickets.rename)
+            .setStyle(ButtonStyle.Secondary),
+          new ButtonBuilder()
+            .setCustomId("tickets:tools-name:channel")
+            .setLabel("Channel Format")
+            .setEmoji(client.getEmoji(interaction.guildId as string).channelname)
         );
 
         const embed = new Embed()
@@ -244,7 +284,7 @@ const OPTTicket: Modals = {
           .send({
             content: `Hello! Thank you for opening a ticket with us: ${roleMention(data.roleId as string)} ${userMention(interaction.user.id)}`,
             embeds: [embed],
-            components: [menu, buttons],
+            components: [menu, buttons, buttons_tools],
           })
           .then(async (msg: Message) => {
             if (!interaction.guild) return;

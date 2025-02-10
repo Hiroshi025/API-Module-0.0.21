@@ -49,6 +49,7 @@ interface BotTickets {
     };
   };
   options: {
+    "max-iamoderation-ticket": number;
     "max-ticket-amout": number;
     times: {
       "time-1": number;

@@ -8,15 +8,26 @@ export async function TicketManager(message: Message) {
   const { guild, author, channel } = message;
   if (!guild) return;
 
-  const data = await manager.prisma.tickets.findMany({ where: { guildId: guild.id } });
-  if (!data || data.length === 0) return;
+  const data = await manager.prisma.tickets.findFirst({ where: { guildId: guild.id } });
+  if (!data || data.options.length === 0) return;
 
   const time = new Date().getHours();
   const ticket = config.bot.tickets;
 
-  const ticketData = data.find((d) => d.channelId === message.channel.id);
-  if (!ticketData) return;
+  const userdb = await manager.prisma.user.findFirst({
+    where: {
+      guildId: guild.id,
+      userId: author.id,
+      tickets: {
+        some: {
+          channelId: message.channel.id,
+          closed: false,
+        },
+      },
+    },
+  });
 
+  if (!userdb) return;
   if (time >= ticket.options.times["time-1"] || time < ticket.options.times["time-2"]) {
     const embed = new EmbedBuilder()
       .setAuthor({

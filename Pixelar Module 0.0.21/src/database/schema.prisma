@@ -177,13 +177,14 @@ type OptionsTicket {
 }
 
 type UserTicket {
-  id        Int?
-  userId    String   @default("")
-  channelId String
-  guildId   String
-  reason    String
-  closed    Boolean  @default(false)
-  createdAt DateTime @default(now())
+  id           Int?
+  userId       String   @default("")
+  iamoderation Boolean  @default(false)
+  channelId    String
+  guildId      String
+  reason       String
+  closed       Boolean  @default(false)
+  createdAt    DateTime @default(now())
 }
 
 type Rooms {
