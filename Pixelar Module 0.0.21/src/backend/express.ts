@@ -14,10 +14,10 @@ import SwaggerParser from "swagger-parser";
 import swStats from "swagger-stats";
 import swaggerUi from "swagger-ui-express";
 
-import { i18nMiddleware } from "@/i18n-lang";
 import { config } from "@lib/utils/config";
 import { logWithLabel } from "@lib/utils/log";
 import { HostURL } from "@utils/functions";
+import { i18nMiddleware } from "@utils/i18n-lang";
 
 import { passport } from "./shared/passport";
 import { router } from "./shared/routes";
@@ -139,7 +139,7 @@ export class APIClient {
         rolling: true, // esto es para que la sesion se renueve cada vez que se haga una peticion
         store: new (require("connect-sqlite3")(session))({
           db: "sessions.sqlite",
-          dir: `${config.paths.database}/temp/`,
+          dir: `${config.paths.database}/sqlite/`,
         }),
       })
     );

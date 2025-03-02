@@ -1,4 +1,5 @@
 export interface BotConfig {
+  node_env: string;
   name: string;
   apps: string[];
   bot: BotOptions;

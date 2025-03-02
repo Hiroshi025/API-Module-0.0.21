@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 
 import { manager } from "@/index";
+import { OrderService } from "@backend/domain/service/utils.service";
 
 export class OrdersCtrl {
   static GetOrder = async (req: Request, res: Response) => {
@@ -145,6 +146,21 @@ export class OrdersCtrl {
           date: new Date(),
         },
       });
+    }
+  };
+  static CreateOrder = async (req: Request, res: Response) => {
+    const { name, image, price, type, payment, info, status, userId } = req.body;
+    const data = await OrderService({ name, image, price, type, payment, info, status, userId });
+    switch (data.code) {
+      case 200: {
+        return res.status(200).json({ message: data.code, data: data.data });
+      }
+      case 400: {
+        return res.status(400).json({ error: data.errors });
+      }
+      default: {
+        return res.status(500).json({ error: data.errors });
+      }
     }
   };
 }

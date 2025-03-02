@@ -7,14 +7,12 @@ import { BotConfig } from "@/typings";
 import { logWithLabel } from "./log";
 
 /**
- * The function `readConfigFile` reads a YAML configuration file from a specified directory path and
- * returns its contents as a generic type.
- * @param {string} filename - The `filename` parameter is a string that represents the name of the
- * configuration file that you want to read.
- * @returns The function `readConfigFile` returns the parsed contents of the specified configuration
- * file as type `T`.
+ * Reads a YAML configuration file and returns its parsed contents.
+ * @param {string} filename - The name of the configuration file to read.
+ * @returns The parsed contents of the configuration file as type `T`.
  */
 const configDir = path.resolve(__dirname, "..", "..", "..", "config");
+
 function readConfigFile<T>(filename: string): T {
   const filePath = path.join(configDir, filename);
   try {
@@ -26,7 +24,10 @@ function readConfigFile<T>(filename: string): T {
   }
 }
 
-/* The code snippet is reading two YAML configuration files, `dashboard.yml` and `config.yml`, using
-the `readConfigFile` function. */
-const config = readConfigFile<BotConfig>("config.yml");
+// Determina el archivo de configuración según NODE_ENV
+const env = process.env.NODE_ENV || "development";
+const configFile = `config.${env}.yml`;
+
+const config = readConfigFile<BotConfig>(configFile);
+
 export { config, readConfigFile };

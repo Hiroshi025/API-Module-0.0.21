@@ -1,15 +1,19 @@
-/**
- * @file Main entry point for the application, responsible for initializing the AppManager and Discord BotClient.
- * Loads environment variables, sets up the application manager, and logs the startup message.
- */
+import dotenvFlow from "dotenv-flow";
 
 import { logWithLabel } from "@lib/utils/log";
 import { BotClient } from "@modules/discord/class/client";
+import { config } from "@utils/config";
 
 import { AppManager } from "./application";
 
 // Load environment variables from the .env file with debug mode enabled
-process.loadEnvFile();
+dotenvFlow.config({
+  node_env: config.node_env === "development" ? "development" : "production",
+  debug: true,
+  default_node_env: "development",
+  purge_dotenv: true,
+  silent: true,
+});
 
 /**
  * The main application manager instance, responsible for managing app modules and their lifecycle.
@@ -36,6 +40,10 @@ export const aplication = manager.apps().then(async (data) => {
     ].join("\n"),
     "App"
   );
+
+  dotenvFlow.listFiles().forEach((file) => {
+    logWithLabel("custom", `Loaded environment file: ${file}`, "Env");
+  });
 
   // Assign the initialized bot client to the `client` variable
   client = data;

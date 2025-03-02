@@ -12,6 +12,7 @@ const format = (str: string): string => `/api/v1/devs/orders${str}`;
 export default ({ app }: TRoutesInput) => {
   app.delete(format("/:id"), rateLimit({ maxRequests: 5, windowMs: 60000, cooldownMs: 120000 }), TokenApi, RoleDevs, OrdersCtrl.DeleteOrder);
   app.put(format("/:id"), rateLimit({ maxRequests: 5, windowMs: 60000, cooldownMs: 120000 }), TokenApi, RoleDevs, OrdersCtrl.EditOrder);
+  app.post(format("/"), rateLimit({ maxRequests: 5, windowMs: 60000, cooldownMs: 120000 }), TokenApi, RoleDevs, OrdersCtrl.CreateOrder);
   app.get(format("/:id"), rateLimit({ maxRequests: 5, windowMs: 60000, cooldownMs: 120000 }), TokenApi, RoleDevs, OrdersCtrl.GetOrder);
   app.get(format("/"), rateLimit({ maxRequests: 5, windowMs: 60000, cooldownMs: 120000 }), TokenApi, RoleDevs, OrdersCtrl.GetOrders);
 };

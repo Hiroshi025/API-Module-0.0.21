@@ -32,6 +32,7 @@ export default ({ app }: TRoutesInput) => {
   app.get(format("/error-404"), (req: Request, res: Response) => {
     res.render("pages/errors/error-404.ejs", {
       botname: client.user ? client.user.username : name,
+      error: "Page not found",
       user: req.user,
     });
   });
@@ -212,6 +213,8 @@ export default ({ app }: TRoutesInput) => {
         date: p.date,
       };
     });
+
+
     res.render("administrator.ejs", {
       botname: client.user ? client.user.username : name,
       _client: client,
@@ -235,6 +238,7 @@ export default ({ app }: TRoutesInput) => {
         day,
         bots,
       },
+      usersapi: await manager.prisma.auth.findMany(),
     });
   });
 

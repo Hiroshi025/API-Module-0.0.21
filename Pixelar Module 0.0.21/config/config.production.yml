@@ -1,7 +1,8 @@
-name: "Pixel Proyects"
+node_env: "development"
+name: ""
 apps:
-  - "discord"
-  - "whatzapp"
+  - ""
+  - ""
 
 ####################################################
 ##------------------------------------------------##
@@ -15,19 +16,12 @@ bot:
   owners:
     - ""
   logs:
-    - "AutoModerationActionExecution"
-    - "MessageUpdate"
-    - "AutoModerationRuleCreate"
-    - "GuildMemberRemove"
-    - "GuildMemberAdd"
-    - "ChannelDelete"
-    - "ChannelCreate"
-    - "GuildEmojiCreate"
-    - "GuildRoleCreate"
-    - "GuildRoleDelete"
-    - "InviteCreate"
-    - "CacheSweep"
-    - "VoiceStateUpdate"
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
   addon-extensions:
     - ".js"
     - ".ts"
@@ -35,7 +29,7 @@ bot:
     - ".js"
     - ".ts"
 
-  ## WEBHOOKS ##
+  ## WEBHOOKS ##bac
   webhooks:
     error: ""
     console: ""
@@ -45,20 +39,20 @@ bot:
   tickets:
     permissions:
       user:
-        - "ViewChannel"
-        - "SendMessages"
-        - "ReadMessageHistory"
-        - "AttachFiles"
-        - "EmbedLinks"
-        - "UseApplicationCommands"
+        - ""
+        - ""
+        - ""
+        - ""
+        - ""
+        - ""
       role:
-        - "ViewChannel"
-        - "AddReactions"
-        - "ReadMessageHistory"
-        - "AttachFiles"
-        - "EmbedLinks"
-        - "UseApplicationCommands"
-        - "SendMessages"
+        - ""
+        - ""
+        - ""
+        - ""
+        - ""
+        - ""
+        - ""
     time: 300000 # 5 minutes
     message:
       embed:
@@ -84,8 +78,8 @@ express:
   host: "localhost"
   port: 3000
   callback: "http://localhost:3000/auth/login"
-  client_id: ""
-  client_secret: ""
+  client_id: "1273146441316962314"
+  client_secret: "bufl9tHEszVFPoGVNgBYEZJxoaJWqFbK"
   prefix: "/api/v1" 
   static-dirs:
     - "css" 

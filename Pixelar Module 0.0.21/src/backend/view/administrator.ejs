@@ -77,23 +77,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">RAM Usage</h4>
-                  <canvas id="lineChart" style="height: 250px"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">CPU Usage</h4>
-                  <canvas id="areaChart" style="height: 250px"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Bot Utils</h4>
+                  <h4 class="card-title">Discord Apps</h4>
                   <canvas id="barChart" style="height:230px"></canvas>
                 </div>
               </div>
@@ -101,7 +85,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">User & Bots</h4>
+                  <h4 class="card-title">Discord Users</h4>
                   <canvas id="doughnutChart" style="height:250px"></canvas>
                 </div>
               </div>
@@ -224,7 +208,7 @@
           <div class="col-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Create Product FREE</h4>
+                <h4 class="card-title">Create Product <mark>FREE</mark></h4>
                 <p class="card-description"> Bot Information </p>
                 <form class="forms-sample">
                   <div class="form-group">
@@ -267,29 +251,29 @@
                 <h4 class="card-title">Update Role User</h4>
                 <form class="form-sample">
                   <p class="card-description"> Personal info </p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group row form-control-lg">
-                        <label class="col-sm-3 col-form-label">Discord ID</label>
+                  <div class="form-group">
+                    <!--                         <label class="col-sm-3 col-form-label">Discord ID</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control" id="discordId" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group row form-control-lg">
-                        <label class="col-sm-3 col-form-label">Role</label>
-                        <div class="col-sm-9">
-                          <select class="form-control" id="role">
-                            <option>user</option>
-                            <option>customer</option>
-                            <option>admin</option>
-                            <option>developer</option>
-                            <option>owner</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
+                        </div> -->
+                    <label for="exampleSelectGender">Discord ID</label>
+                    <select class="form-control" id="discordId">
+                      <% usersapi.forEach((user)=> { %>
+                        <option value="<%= user.discord %>">
+                          <%= user.discord %> (<%= user.name %>)
+                        </option>
+                        <% }); %>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Role</label>
+                      <select class="form-control" id="role">
+                        <option>user</option>
+                        <option>customer</option>
+                        <option>admin</option>
+                        <option>developer</option>
+                        <option>owner</option>
+                      </select>
                   </div>
                   <button type="submit" class="btn btn-lg btn-rounded btn-primary mr-2"
                     id="submit-update-role">Submit</button>
@@ -307,7 +291,7 @@
                   <p class="card-description"> Message info </p>
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="form-group row form-control-lg">
+                      <div class="form-group">
                         <label class="col-sm-3 col-form-label">Message</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control" id="whatsapp-message" />
@@ -315,7 +299,7 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="form-group row form-control-lg">
+                      <div class="form-group">
                         <label class="col-sm-3 col-form-label">Response</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control" id="whatsapp-response" />
@@ -637,102 +621,6 @@
     });
   </script>
   <!-- End custom js for this page -->
-  <script>
-    $(function () {
-      "use strict";
-      const machine = JSON.parse('<%- JSON.stringify(machine) %>');
-
-      // Inicializar datos iniciales
-      const ramData = {
-        labels: [],
-        datasets: [
-          {
-            label: "RAM (MB)",
-            data: [],
-            borderColor: "rgba(54, 162, 235, 1)",
-            backgroundColor: "rgba(54, 162, 235, 0.2)",
-            fill: true,
-          },
-        ],
-      };
-      const cpuData = {
-        labels: [],
-        datasets: [
-          {
-            label: "CPU (ms)",
-            data: [],
-            borderColor: "rgba(255, 99, 132, 1)",
-            backgroundColor: "rgba(255, 99, 132, 0.2)",
-            fill: true,
-          },
-        ],
-      };
-
-      // Opciones de las gráficas
-      const options = {
-        scales: {
-          yAxes: [
-            {
-              ticks: { beginAtZero: true },
-              gridLines: { color: "rgba(204, 204, 204,0.1)" },
-            },
-          ],
-          xAxes: [
-            {
-              gridLines: { color: "rgba(204, 204, 204,0.1)" },
-              ticks: {
-                autoSkip: true, // Salta etiquetas si están muy juntas
-                maxTicksLimit: 5, // Máximo de etiquetas visibles
-                callback: function (value, index, values) {
-                  return index % 2 === 0 ? value : ""; // Muestra solo cada etiqueta alterna
-                },
-              },
-            },
-          ],
-        },
-        legend: { display: true },
-        elements: { point: { radius: 0 } },
-      };
-
-      // Crear gráficas
-      const ramChart = new Chart($("#lineChart").get(0).getContext("2d"), {
-        type: "line",
-        data: ramData,
-        options,
-      });
-      const cpuChart = new Chart($("#areaChart").get(0).getContext("2d"), {
-        type: "line",
-        data: cpuData,
-        options,
-      });
-
-      // Función para actualizar datos
-      function updateCharts() {
-        const now = new Date().toLocaleTimeString();
-
-        // Actualizar datos de RAM
-        if (ramData.labels.length > 10) ramData.labels.shift();
-        if (ramData.datasets[0].data.length > 10) ramData.datasets[0].data.shift();
-        ramData.labels.push(now);
-        ramData.datasets[0].data.push(machine.ram);
-
-        // Actualizar datos de CPU
-        if (cpuData.labels.length > 10) cpuData.labels.shift();
-        if (cpuData.datasets[0].data.length > 10) cpuData.datasets[0].data.shift();
-        cpuData.labels.push(now);
-        cpuData.datasets[0].data.push(machine.cpu);
-
-        ramChart.update();
-        cpuChart.update();
-      }
-
-      // Actualizar cada 10s
-      setInterval(updateCharts, 10000);
-
-      // Llamada inicial para cargar datos
-      updateCharts();
-    });
-  </script>
   <!-- Form User Update -->
   <script>
     $(document).ready(function () {
