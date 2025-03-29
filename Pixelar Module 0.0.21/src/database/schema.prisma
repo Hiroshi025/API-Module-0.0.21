@@ -257,6 +257,7 @@ model UserEconomy {
   guildId String
   userId  String
   balance Float  @default(0)
+  history String[] @default([])
 }
 
 //********* ECONOMY MODULE *********//

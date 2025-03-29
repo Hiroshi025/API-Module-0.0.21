@@ -59,7 +59,6 @@ export enum ThreadArchiveTime {
   SEVEN_DAYS = 10080,
 }
 
-// TODO Remove later. Only used for data.json conversion
 export type ServerConfigLegacy = {
   permission: PermissionType;
   permissionRoleId: Snowflake;

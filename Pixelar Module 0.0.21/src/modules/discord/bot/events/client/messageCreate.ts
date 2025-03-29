@@ -39,7 +39,6 @@ export default new Event("messageCreate", async (message) => {
 
   if (!command) return;
 
-  //HACK: CUanta la cantidad de mensajes enviados por el usuario
   await manager.prisma.user.update({
     where: { userId: message.author.id },
     data: { messages: { increment: 1 } },
